@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #fd5a54;
+}
+
+.privacy-policy {
+    padding: 100px 0;
+    color: #fff;
+    background-color: rgb(35,40,60);
+}
+
+.section-title h1 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 50px;
+   
+}
+.section-title h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #899093;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+address {
+    margin-top: 75px;
+}
+
+.sub-title {
+    display: block;
+    color: #899093;
+}
+
+.emails {
+    padding: 0;
+}
+
+.emails li {
+    margin: 0 0 16px;
+}
+
+.email {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png") no-repeat;
+    background-position: left;
+    background-size: 18px;
+    padding-left: 25px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.post-image {
+    width: 450px;
+    height: 650px;
+    border:5px solid #1f202f;
+    margin-top: -23px;
+    margin-right: 20px;
+}
+.post-image:hover {
+    border:5px solid #fff;
+}
