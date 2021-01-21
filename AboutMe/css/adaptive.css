@@ -1,0 +1,87 @@
+@media screen and(max-width: 1149px)  {
+    .menu-list ul li  {
+       display: inline-block;
+       flex-direction: column;
+       
+   }
+}
+@media screen and (max-width: 1410px)  {
+   .text-portfolio {
+       display:flex;
+       margin-left: 0px;
+   }
+}
+@media screen and (max-width: 1045px)  {
+   .text-portfolio {
+       display: inline-block;
+       text-align: center;
+       margin-left: 0px;
+   }
+}
+@media screen and (max-width: 1045px)  {
+   .vl {
+       display: none;
+   }
+}
+@media screen and (max-width: 1040px)  {
+   .my-services2 {
+       display: inline-block;
+       text-align: center;
+       margin-top: -14px;
+       margin-left: 73px;
+   }
+}
+@media screen and (max-width: 550px)  {
+   .footer-menu ul   {
+       display: inline-block;
+       flex-direction: row;
+       padding: 0;
+       margin: 0;
+   }
+}
+@media screen and (max-width: 820px)  {
+   .profile {
+       display: inline-block;
+      
+   }
+   .profile img {
+       height: 400px;
+       width: 400px;
+       border: 5px solid #1f202f;
+       display: block;
+       margin: 0 auto;
+   }
+}
+@media screen and (max-width: 705px)  {
+   .contact {
+       display: block;
+       
+   }
+}
+@media screen and (max-width: 1400px) {
+   .img-portfolio img {
+       display: block;
+       margin: 0 auto;
+   }
+   .text-portolio-p {
+       margin-left: 100px; 
+   }
+   .button {
+       font-size: 20px;
+   }
+}
+@media screen and (max-width: 1090px) {
+    .contact-me {
+       display: inline-block;
+   }
+}
+@media screen and (max-width: 520px) {
+    .menu .menu-lists {
+       display: inline-block;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .person span {
+       color: white;
+    }
+}
