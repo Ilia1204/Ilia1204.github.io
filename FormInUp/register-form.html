@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/FormReg.css">
+</head>
+<body>
+    <div class="main">
+        <form class="form">
+            <div class="action">
+                <div class="dws-input">
+                    <input type="text" name="username" maxlength="15" placeholder="Your Name*" required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="password" maxlength="15" placeholder="Your Surname*"required>
+                </div>
+                <div class="dws-input">
+                    <input type="email" name="password" maxlength="20" placeholder="Email Address*"required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="password" maxlength="15" placeholder="Martian User ID*"required>
+                </div>
+                <div class="dws-input">
+                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Password*"required>
+                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Confirm Password*"required><br />
+                    <label>
+                        <input type="checkbox" class="showPassword"><span class="link1">Показать пароль</span>
+                    </label>
+                </div> 
+                <div class="buttons">
+                    <div class="btn">
+                        <input class="button" type="submit" name="submit" value="Sign In"><br />
+                    </div>
+                        <a href="index.html"><input class="button" type="submit" name="submit" value="Sign Up"></a><br />
+                </div>
+                <div class="forgot">
+                    <a href="index.html">
+                        <span class="link">
+                            Have an account?
+                        </span>
+                    </a>
+                </div>
+                <div class="register">
+                    <a href="index.html">
+                        <span class="link-now">
+                           Sign In
+                        </span>
+                    </a>
+                        
+                </div>
+            </div> 
+        </form>
+    <div class="form-with-img"></div>
+</div>
+    
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

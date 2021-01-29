@@ -1,0 +1,108 @@
+body {
+ 
+    background-image: url("../img/martian.jpg");
+    background-image: no-repeat;
+}  
+a {
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+    text-decoration: underline;
+}   
+.form {
+   width: 450px;
+   height: 450px;
+   background-image: url("../img/block-fon.jpg");
+   border-top-left-radius : 15px;
+   border-bottom-left-radius: 15px;
+}
+.form-with-img {
+    width: 450px;
+    height: 450px;
+    background-image: url("../img/form-with-image.jpg");
+    border-top-right-radius : 15px;
+    border-bottom-right-radius: 15px;
+ }
+.container{
+    position: relative;
+    border-radius: 15px;
+    width:900px;
+    height: 450px;
+    background-color: rgba(24, 33, 52, 0.7);
+    margin: 250px auto 0 auto;
+    text-align: center;
+    display: flex;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+    width: 300px;
+    height: 50px;
+    font-size: 23px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    letter-spacing: 3px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+} 
+input:focus {
+  font-size: 25px;
+}  
+input::-webkit-input-placeholder { 
+    color: rgba(255, 255, 255, 0.637);
+}
+.button {
+    padding: 13px 30px;
+    width: 145px;
+    margin: 4px 0 20px 0;
+    font-size: 23px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    font-family: clarendon;
+    src: url(fonts/clarendon.ttf); 
+    font-family: 'Times New Roman', Times, serif;
+}
+.button:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #144d70;
+} 
+.btn {
+    margin-right: 25px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;    
+    margin-top: 7px;
+}
+.link {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+.forgot {
+    margin-top: 40px;
+}
+.action {
+    margin-top: 65px;
+}
+.register{
+    margin-top:10px;
+}
+.link-now {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+label {
+    position: relative;
+    left: 19%;
+}
+.link1 {
+    color: rgb(235, 229, 229);
+    letter-spacing: 3px;
+}
