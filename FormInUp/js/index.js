@@ -13,20 +13,34 @@ function toggleType() {
     }
 }
 
-$(document).ready(function(){
-    $("#setCookie").click(function () {
-    $.cookie("popup", "", { expires:0, path: '/' });
-    $("#bg_popup").hide();
-    });
-     
-    if ( $.cookie("popup") == null )
-    {
-    setInterval(function(){
-    $("#bg_popup").show();
-    }, 1000)
-    }
-    else { $("#bg_popup").hide();
-    }
-     
-});
 
+
+
+
+
+
+
+const url = {
+        fixer: 'http://data.fixer.io/api/latest'
+}
+
+const access_key = 'e3aab1d37937c581eb001b37ed521292';
+
+$.get(
+    url.fixer, 
+    {
+        'access_key':access_key,
+        'symbols':'USD, EUR, RUB',
+        /*'base':'RUB'*/
+    
+    },
+    (response) => {
+        if(response.success){
+            console.log(response);
+            /*$('.valute-usd').html(())*/
+        }
+        else {
+            alert('ERROR!' + response.error.type);
+        }
+    }
+);

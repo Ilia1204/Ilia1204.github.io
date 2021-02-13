@@ -2,7 +2,7 @@
 
 body {
     background: url("../img/martian3.jpg") no-repeat;
-    background-size: 100%;
+    /*background-size: 100%;*/
     font-family: Lora;
 }  
 a {
@@ -11,9 +11,17 @@ a {
 }
 a:hover{
     font-size: 25px;
-    text-decoration: underline;
+   /* text-decoration: underline;*/
     color: #5e2828;
+    transition: all 500ms ease; 
+    transition-delay: 10ms;
 }   
+a::after {
+    transition: .3s ease all;
+    transition-delay: 10ms;
+    color: #5e2828;
+    opacity: 1;
+}
 .form {
    width: 450px;
    height: 450px;
@@ -35,7 +43,8 @@ a:hover{
     margin: 250px auto 0 auto;
     text-align: center;
     display: flex;
-    /*animation: container 3s 0s infinite linear ;*/
+    animation: container 2s 0s 1 ease-in-out;
+    /*animation-iteration-count: 1;*/
 }
 input[type="text"],input[type="password"],input[type="email"]{
     width: 300px;
@@ -71,6 +80,23 @@ input::-webkit-input-placeholder {
     border-radius: 2px;
     letter-spacing: 3px;
 }
+.button1 {
+    padding: 13px 30px;
+    width: 165px;
+    margin: 4px 0 20px 0;
+    font-size: 23px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 15px;
+    letter-spacing: 3px;
+}
+.button1:hover {
+    transition: all 1s;
+    background: #fff;
+    color: #e24545;
+} 
 @font-face {
     font-family: Clarendon; /* Имя шрифта */
     src: url(/fonts/clarendon.ttf); /* Путь к файлу со шрифтом */
@@ -97,6 +123,7 @@ input::-webkit-input-placeholder {
     letter-spacing: 3px;
     font-size: 25px;
     margin-bottom: 15px;
+    transition: all 500ms ease; 
 }
 .action {
     margin-top: 30px;
@@ -207,10 +234,6 @@ header {
     opacity: 1;
     transform: translateY(-3px);
 }
-.menu-lists span, .hamb{
-    display: none;
-}
-
 .menu .lists-item a {
     color: #fff;
     font-size: 14px;
@@ -245,13 +268,43 @@ header {
 .header-form-sign-in {
     color: #fff;
 }
-
+.header {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .header a {
+    float: left;
+    display: block;
+    color: transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .header a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .active {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .header .icon {
+    display: none;
+  }
+  
 @keyframes container {
-    from {
+    0% {
      transform: RotateX(0)
     }
-  
-    to {
+   /* 50% {
+        transform: RotateX(180deg);
+    }*/
+    100% {
         transform: RotateX(360deg);
        }
   }         

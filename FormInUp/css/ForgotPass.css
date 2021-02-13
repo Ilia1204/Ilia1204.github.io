@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
 body {
     background: url("../img/martian3.jpg") no-repeat;
     background-size: 100%;
+    font-family: Lora;
 }  
 a {
     color:#fff;
     text-decoration: none;
-   
 }
 a:hover{
     font-size: 25px;
@@ -18,6 +20,7 @@ a:hover{
     background-image: url("../img/block-fon.jpg");
     border-top-left-radius : 15px;
     border-bottom-left-radius: 15px;
+    
 }
 .form-with-img {
      width: 450px;
@@ -56,12 +59,13 @@ input::-webkit-input-placeholder {
     padding: 13px 30px;
     width: 280px;
     margin: 4px 0 20px 0;
-    font-size: 25px;
+    font-size: 22px;
     color: #fff;
     background-color: transparent;
     border: 1px solid white;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 15px;
+    text-align: center;
     letter-spacing: 3px;
 }
 .button-forgot:hover {
