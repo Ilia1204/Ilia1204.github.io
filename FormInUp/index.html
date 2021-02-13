@@ -3,49 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма входа</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/ModalWindow.css">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#setCookie").click(function () {
+            var date = new Date();
+            date.setTime(date.getTime() + (60 * 1000));
+            $.cookie("popup", "", {expires: date, path: '/' });
+        $("#bg_popup").hide();
+        });
+         
+        if ( $.cookie("popup") == null )
+        {
+        setTimeout(function(){
+        $("#bg_popup").show();
+        }, 200)
+        }
+        else { $("#bg_popup").hide();
+        }
+        });
+            </script>
 </head>
 <body>
+    <div class="header">
+        <h1 class="header-form-sign-in" data-aos="fade-right">
+            <span>
+             Form
+            </span>
+            Sign In
+        </h1>
+
+        <nav class="menu">
+            <ul class="menu-lists">
+                <span>+</span>
+                <li class="lists-item" data-aos="fade-down-right">
+                    <a href="#person">Home</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-left">
+                    <a href="#about">About</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-right">
+                    <a href="#services">Services</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-left">
+                    <a href="#blog">Blog</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-right">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-left">
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li class="lists-item"data-aos="fade-down-right">
+                    <a href="#privacy-policy">Privacy policy</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="button"  data-aos="fade-left">Contact Me</button>
+    </div>
     <div class="container">
         <form class="form">
             <div class="action">
                 <div class="dws-input">
                     <input type="email" name="username" placeholder="Email Address" required>
                 </div>
-                <div class="dws-input">
+                <div class="dws-input2">
                     <input type="password" class = "password" name="password" placeholder="Password"required><br />
                 <label>
-                    <input type="checkbox" class="showPassword"><span class="link1"> Показать пароль</span>
+                    <input type="checkbox" class="showPassword"><span class="link1"> Show Password</span>
                 </label>
                 </div> 
                 <div class="buttons">
                     <div class="btn">
                         <input class="button" type="submit" name="submit" value="Sign In"><br />
                     </div>
-                        <input class="button" type="submit" name="submit" value="Sign Up"><br />
+                        <input onClick="window.location.href='register-form.html'" class="button" type="submit" name="submit" value="Sign Up"><br />
                 </div>
                 <div class="forgot">
-                    <a href="#">
-                        <span class="link">
-                            Forgot password?
-                        </span>
+                    <a href="ForgotPass.html">
+                       Forgot password?
                     </a>
                 </div>
-                <div class="register">
-                    <a href="register-form.html">
-                        <span class="link-now">
-                            Register now
-                        </span>
-                    </a>
-                      
-                </div>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <img src="./img/social/facebook-white.svg" alt="facebook">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <img src="./img/social/twitter-white.svg" alt="twitter">
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <img src="./img/social/pinterest-white.svg" alt="pinterest">
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <img src="./img/social/linkedin-white.svg" alt="linkedin">
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <img src="./img/social/instagram-white.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
             </div> 
         </form>
             <div class="form-with-img"></div>
     </div>    
+        <div id="bg_popup">
+            <div id="popup">
+                <a  id="setCookie" class="close" href="#" title="Закрыть" 
+                onclick="document.getElementById('bg_popup').style.display='none'; 
+                    return false;">X
+                </a>
+                    <h1>
+                        Пример
+                    </h1>
+                        <p>
+                            Модальное окно с задержкой в 4 секунды, которое появляется раз в сутки.
+                        </p>
+            </div>
+        </div>
         <script src="./js/jquery-3.5.1.min.js"></script>
         <script src="./js/index.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+        <script type="./js/jquery.cookie.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

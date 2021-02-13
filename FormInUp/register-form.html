@@ -3,53 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Register</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/FormReg.css">
+    <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body>
     <div class="main">
         <form class="form">
             <div class="action">
                 <div class="dws-input">
-                    <input type="text" name="username" maxlength="15" placeholder="Your Name*" required>
+                    <input type="text" name="name" maxlength="15" placeholder="Your Name*" required>
                 </div>
                 <div class="dws-input">
-                    <input type="text" name="password" maxlength="15" placeholder="Your Surname*"required>
+                    <input type="text" name="surname" maxlength="15" placeholder="Your Surname*"required>
                 </div>
                 <div class="dws-input">
-                    <input type="email" name="password" maxlength="20" placeholder="Email Address*"required>
+                    <input type="email" name="email" maxlength="20" placeholder="Email Address*"required>
                 </div>
                 <div class="dws-input">
-                    <input type="text" name="password" maxlength="15" placeholder="Martian User ID*"required>
+                    <input type="text" name="userid" maxlength="15" placeholder="Martian User ID*"required>
                 </div>
-                <div class="dws-input">
-                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Password*"required>
+                <div class="dws-input2">
+                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Password*" required>
+                <div class="dws-input2">
                     <input type="password" class = "password" name="password" maxlength="20" placeholder="Confirm Password*"required><br />
+                </div>
+                    <div class="error"></div>
                     <label>
-                        <input type="checkbox" class="showPassword"><span class="link1">Показать пароль</span>
+                        <input type="checkbox" class="showPassword">
+                            <span class="link1">
+                                Show Password
+                            </span>
                     </label>
                 </div> 
                 <div class="buttons">
                     <div class="btn">
-                        <input class="button" type="submit" name="submit" value="Sign In"><br />
+                      <input class="button" type="submit" name="submit" id = "sumbit" value="Sign In"><br />
                     </div>
-                        <a href="index.html"><input class="button" type="submit" name="submit" value="Sign Up"></a><br />
+                        <input class="button" type="submit" name="submit" value="Sign Up"><br />
                 </div>
                 <div class="forgot">
                     <a href="index.html">
-                        <span class="link">
-                            Have an account?
-                        </span>
+                        Have an account?
                     </a>
                 </div>
                 <div class="register">
                     <a href="index.html">
-                        <span class="link-now">
-                           Sign In
-                        </span>
-                    </a>
-                        
+                       Sign In
+                      </a>
                 </div>
             </div> 
         </form>

@@ -15,9 +15,7 @@ $(function() {
             $('.lists-item').find('a:contains(Contact)').addClass('active');
         }
     }
-
-
-    $('a[href*="#"]').on('click', function (event) {
+      $('a[href*="#"]').on('click', function (event) {
         event.preventDefault();
        
         $('html, body').animate({
@@ -48,5 +46,21 @@ $(function() {
         }
 
         navMenuLink();
+    });
+    $(function(){
+        $('.hamb').click(function(){
+          $('.menu-lists').animate({
+          right: 0
+          });
+      $(this).hide();
+       $('.overlay').fadeIn();
+      });
+      $('.menu-lists span, .overlay').click(function(){
+        $('.menu-lists').animate({
+          right: -250
+        });
+      $('.hamb').show();
+      $('.overlay').fadeOut();
+      });
     });
 });

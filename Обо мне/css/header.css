@@ -38,6 +38,9 @@ header {
     opacity: 1;
     transform: translateY(-3px);
 }
+.menu-lists span, .hamb{
+    display: none;
+}
 
 .menu .lists-item a {
     color: #fff;
@@ -88,4 +91,80 @@ header {
     background-color: #fd5a54;
     border: 1px solid transparent;
     color: #fff;
+}
+
+.button {
+    padding: 10px 15px;
+    background: transparent; 
+    cursor: pointer;
+    border: 1px solid #fd5a54;
+    color: #fd5a54;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.button:hover {
+    background: #fd5a54;
+    border: 1px solid transparent;
+    color: #fff;
+  
+}
+.header {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: transparent;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+}
+
+.header .icon {
+  display: none;
+}
+
+
+
+.social-links {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.social-links a {
+  float: left;
+  display: block;
+  color: transparent;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.social-links a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+}
+
+.social-links .icon {
+  display: none;
 }

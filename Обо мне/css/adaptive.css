@@ -84,7 +84,7 @@
        display: inline-block;
    }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1000px) {
     .menu .menu-lists {
        display: inline-block;
     }
@@ -95,13 +95,17 @@
        text-align: center;
     }
 }
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 730px) {
     .post-image {
         display: none;
     }
     .contact {
         height: auto;
     }
+    .section-title h1,h5 {
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 505px) {
     .profile img{
@@ -145,4 +149,87 @@
     .social-links li{
         margin-bottom: 10px;
     }
+}
+@media screen and (max-width: 600px) {
+  .header a {
+    display: none;
+  }
+  .header a.icon {
+    float: right;
+    display: block;
+    color: #fff; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .post-image {
+    width:  450px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .social-links a {
+    display: none;
+  }
+  .social-links a.icon {
+    float: right;
+    display: block;
+    color: #fff; 
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .social-links.responsive {
+    position: relative;
+  }
+  .social-links.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .social-links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 200px) {
+  .logo{
+     font-size: 25px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .post-image {
+    width:  350px;
+    height: 450px;
+  }
+
+}
+@media screen and (max-width: 738px) {
+  .post-image {
+    width:  250px;
+    height: 350px;
+  }
+
+}
+@media screen and (max-width: 465px) {
+  .person-h3 {
+    margin-left: auto;  
+  }
+  .h2-servis {
+    text-align: inherit;
+  }
 }

@@ -1,7 +1,6 @@
 body {
- 
-    background-image: url("../img/martian.jpg");
-    background-image: no-repeat;
+    background: url("../img/martian3.jpg") no-repeat;
+    background-size: 100%;
 }  
 a {
     color:#fff;
@@ -10,13 +9,12 @@ a {
 a:hover{
     font-size: 25px;
     text-decoration: underline;
+    color: #5e2828;
 }   
 .main{
     position: relative;
-    border-radius: 15px;
     width: 1100px;
     height: 750px;
-    background-color: rgba(24, 33, 52, 0.7);
     margin: 100px auto 0 auto;
     text-align: center;
     display: flex;
@@ -49,9 +47,10 @@ input[type="text"],input[type="password"],input[type="email"] {
 }  
 input:focus {
     font-size: 25px;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }   
 input::-webkit-input-placeholder { 
-    color: rgba(255, 255, 255, 0.637);
+    color: #fff;
 }
 .button {
     padding: 13px 30px;
@@ -86,13 +85,17 @@ input::-webkit-input-placeholder {
     font-size: 21px;
 }
 .forgot {
-    margin-top: 40px;
+    margin-top: 30px;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 .action {
     margin-top: 65px;
 }
 .register{
-    margin-top:10px;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 .link-now {
     letter-spacing: 3px;
@@ -105,4 +108,5 @@ label {
 .link1 {
     color: rgb(235, 229, 229);
     letter-spacing: 3px;
+    font-size: 20px;
 }

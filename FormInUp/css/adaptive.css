@@ -1,1 +1,14 @@
-@media screen and (max-width: )
+@media screen and (max-width: 1366px) {
+    .container{
+        margin: 100px auto 0 auto;
+    }
+    .main {
+        margin: 7px auto 0 auto;
+    }
+    .container-forgot {
+        margin: 80px auto 0 auto;
+    }
+    .header {
+    	display: none;
+    }
+}
