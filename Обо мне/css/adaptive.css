@@ -1,4 +1,4 @@
-@media screen and(max-width: 1149px)  {
+  @media screen and(max-width: 1149px)  {
     .menu-list ul li  {
        display: inline-block;
        flex-direction: column;
@@ -231,5 +231,11 @@
   }
   .h2-servis {
     text-align: inherit;
+  }
+}
+@media screen and (max-width: 767px) {
+   html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
   }
 }

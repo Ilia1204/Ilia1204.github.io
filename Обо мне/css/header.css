@@ -2,6 +2,7 @@ header {
     position: absolute;
     width: 100%;
     height: 90px;
+    background-color: transparent;
 }
 
 .header {
@@ -11,7 +12,9 @@ header {
     justify-content: space-around;
     height: 100%;
 }
-
+.header-color {
+    background-color: rgb(10 10 10 / 0.45);
+}
 .logo {
     color: #fd5a54;
     font-size: 32px;
@@ -167,4 +170,32 @@ header {
 
 .social-links .icon {
   display: none;
+}
+
+.header2 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header2 h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 20px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+
 }

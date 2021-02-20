@@ -35,7 +35,11 @@ $(function() {
             }
         }
     });
-    
+    $(document).ready(function(){
+  $('.icon').click(function(){
+    $(this).toggleClass('open');
+  });
+});
     navMenuLink();
 
     $(document).scroll(function(event) {
@@ -44,6 +48,10 @@ $(function() {
         } else {
             $('header').removeClass('header-color');
         }
+
+        
+
+
 
         navMenuLink();
     });
@@ -63,4 +71,9 @@ $(function() {
       $('.overlay').fadeOut();
       });
     });
+});
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
 });
