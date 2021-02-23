@@ -159,6 +159,9 @@
     display: block;
     color: #fff; 
   }
+  .header2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -15,6 +15,15 @@
   else  {
     echo "No";
   }
+
+  if($_SERVER['REQUEST METHOD'] == 'POST') {
+    echo $_POST['name']; 
+    echo $_POST['age'];  
+  }
+  
+  echo $_POST;
+  
+  var_dump(1,"txt",$_POST) ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
