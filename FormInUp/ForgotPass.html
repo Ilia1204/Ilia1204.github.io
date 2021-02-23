@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-forgot">
-        <form class="form">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="action">
                 <div class="dws-input">
                     <input type="email" name="username" maxlength="20"  placeholder="Email Address" required>
@@ -26,16 +26,11 @@
                         <input class="button-forgot" type="submit" name="submit" value="Restore Password"><br />
                     </div>
                 </div>
-                <div class="forgot-password">
-                    <a href="index.html">
-                        Sign In
-                    </a>
-                </div>
-                <div class="register">
-                    <a href="register-form.html">
-                       Sign Up
-                    </a>
-                      
+                <div class="buttons">
+                    <div class="btn">
+                        <input  onClick="window.location.href='index.html'" class="button" type="submit" name="submit" value="Sign In" title="Войти"><br />
+                    </div>
+                        <input onClick="window.location.href='register-form.html'" class="button" type="submit" name="submit" value="Sign Up" title="Зарегистрироваться"><br />
                 </div>
             </div> 
         </form>

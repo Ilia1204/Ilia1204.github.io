@@ -10,7 +10,6 @@ a {
     text-decoration: none;
 }
 a:hover{
-    font-size: 25px;
     text-decoration: underline;    
     color: #5e2828;
 }   
@@ -21,6 +20,32 @@ a:hover{
     border-top-left-radius : 15px;
     border-bottom-left-radius: 15px;
     
+}
+.btn {
+    margin-right: 25px;
+}
+.button {
+    padding: 13px 30px;
+    width: 145px;
+    margin: 4px 0 20px 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.button:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #144d70;
+} 
+.buttons {
+    display: flex;
+    justify-content: center;    
+    margin-top: 7px;
 }
 .form-with-img {
      width: 450px;
@@ -36,11 +61,12 @@ a:hover{
     margin: 250px auto 0 auto;
     text-align: center;
     display: flex;
+    animation: container-forgot 2s 0s 1 linear;
 }
 input[type="text"],input[type="password"],input[type="email"]{
     width: 300px;
     height: 50px;
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 25px;
     background-color: transparent;
     letter-spacing: 3px;
@@ -50,7 +76,7 @@ input[type="text"],input[type="password"],input[type="email"]{
     color: #fff;
 } 
 input:focus {
-  font-size: 25px;
+  border-bottom: 2px solid #fff;
 }  
 input::-webkit-input-placeholder { 
     color: #fff;
@@ -59,7 +85,7 @@ input::-webkit-input-placeholder {
     padding: 13px 30px;
     width: 280px;
     margin: 4px 0 20px 0;
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     background-color: transparent;
     border: 1px solid white;
@@ -67,6 +93,7 @@ input::-webkit-input-placeholder {
     border-radius: 15px;
     text-align: center;
     letter-spacing: 3px;
+    transition: 0.5s;
 }
 .button-forgot:hover {
     transition: all 0.5s;
@@ -113,7 +140,7 @@ label {
     font-size: 20px;
 }
 .or-forgot {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(235, 224, 224);
     position: relative;
     left: 31%;
@@ -122,3 +149,15 @@ label {
     position: relative;
     top:-20px
 }
+@keyframes container-forgot {
+    0% {
+     transform: RotateX(0);  
+    }
+   /* 50% {
+        transform: RotateX(180deg);
+    }*/
+    100% {
+        transform: RotateX(360deg);
+    }
+  }         
+ 

@@ -44,3 +44,27 @@ $.get(
         }
     }
 );
+
+
+
+    $(document).scroll(function(event) {
+        if($(window).scrollTop() > $(window).height()) {
+            $('header').addClass('header-color');
+        } else {
+            $('header').removeClass('header-color');
+        }
+
+        navMenuLink();
+    });
+
+
+$('body').on('click', '.password-control', function(){
+    if ($('#password-input').attr('type') == 'password'){
+        $(this).addClass('view');
+        $('#password-input').attr('type', 'text');
+    } else {
+        $(this).removeClass('view');
+        $('#password-input').attr('type', 'password');
+    }
+    return false;
+});

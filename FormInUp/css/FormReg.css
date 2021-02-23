@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 
 body {
-    background: url("../img/martian3.jpg") no-repeat;
+    background: url("../img/martian4.jpg") no-repeat;
     background-size: 100%;
     font-family: Lora;
 }  
@@ -21,6 +21,7 @@ a:hover{
     margin: 100px auto 0 auto;
     text-align: center;
     display: flex;
+    animation: main 2s 0s 1 ease-in;
 }
 .form {
     width: 550px;
@@ -39,7 +40,7 @@ a:hover{
 input[type="text"],input[type="password"],input[type="email"] {
     width: 300px;
     height: 50px;
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 25px;
     background-color: transparent;
     letter-spacing: 3px;
@@ -49,8 +50,7 @@ input[type="text"],input[type="password"],input[type="email"] {
     color: #fff;
 }  
 input:focus {
-    font-size: 25px;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid #fff;
 }   
 input::-webkit-input-placeholder { 
     color: #fff;
@@ -58,8 +58,8 @@ input::-webkit-input-placeholder {
 .button {
     padding: 13px 30px;
     width: 145px;
-    margin: 4px 0 20px 0;
-    font-size: 23px;
+    margin: 15px 0 20px 0;
+    font-size: 22px;
     color: #fff;
     background-color: transparent;
     border: 1px solid white;
@@ -69,6 +69,7 @@ input::-webkit-input-placeholder {
     font-family: clarendon;
     src: url(fonts/clarendon.ttf); 
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s;
 }
 .button:hover {
     transition: all 0.5s;
@@ -111,5 +112,52 @@ label {
 .link1 {
     color: rgb(235, 229, 229);
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 17px;
+}
+@keyframes main {
+    0% {
+     transform: RotateX(0);  
+    }
+   /* 50% {
+        transform: RotateX(180deg);
+    }*/
+    100% {
+        transform: RotateX(360deg);
+    }
+  }         
+.social-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    justify-content: center;
+}
+.social-links li {
+    display: flex;
+    margin: 0 4px;
+}
+.social-links a {
+    padding: 16px;
+    line-height: 0;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255,.25);
+    transition: .3s border;
+}
+.social-links a:hover {
+    border-color: #fff;
+}
+.social-links a:hover img {
+    transform: scale(1.5);
+}
+.social-links a img {
+    height: 16px;
+    width: 16px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.error {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: large;
 }
