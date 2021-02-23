@@ -317,7 +317,56 @@ header {
 .password-control.view {
     background: url("https://snipp.ru/demo/495/no-view.svg") 0 0 no-repeat;
 }
-
+.check {
+    display: none;
+}
+.action .group {
+    margin-bottom:15px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.action .group label .icon{
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    background: rgba(255, 255, 255, 0.3);
+}
+.action .group label .icon:before,
+.action .group label .icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    background:#fff;
+    position:absolute;
+    transition:all .2s ease-in-out 0s;
+}
+.action .group label .icon:before{
+    left:3px;
+    width:5px;
+    bottom:6px;
+    transform:scale(0) rotate(0);
+}
+.action .group label .icon:after{
+    top:6px;
+    right:0;
+    transform:scale(0) rotate(0);
+}
+.action .group .check:checked + label{
+    color:#fff;
+}
+.action .group .check:checked + label .icon{
+    background:#1161ee;
+}
+.action .group .check:checked + label .icon:before{
+    transform:scale(1) rotate(45deg);
+}
+.action .group .check:checked + label .icon:after{
+    transform:scale(1) rotate(-45deg);
+}
+.remember_me {
+    transition:0.5s;
+}
 @keyframes container {
     0% {
      transform: RotateX(0)
