@@ -46,7 +46,7 @@ a::after {
     animation: container 2s 0s 1 ease-in-out;
 }
 input[type="text"],input[type="password"],input[type="email"]{
-    width: 300px;
+    width: 320px;
     height: 50px;
     font-size: 20px;
     margin-bottom: 25px;
@@ -61,10 +61,23 @@ input:focus {
 }  
 input::-webkit-input-placeholder { 
     color: #fff;
+    position: relative;
 }
 .dws-input2 {
     position: relative;
     top: -10px;
+}
+.dws-input .fa {
+    position: relative;
+    color: #fff;
+    right: 10px;
+    font-size: 1.2rem;
+}
+.dws-input2 .fa {
+    color: #fff;
+    position: relative;
+    right: 10px;
+    font-size: 1.2rem;
 }
 .button {
     padding: 13px 30px;
@@ -295,7 +308,7 @@ header {
 .password-control {
     position: absolute;
     top: 15px;
-    right: 80px;
+    right: 65px;
     display: inline-block;
     width: 30px;
     height: 40px;

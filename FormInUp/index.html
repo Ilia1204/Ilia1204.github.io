@@ -67,10 +67,12 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="action">
                 <div class="dws-input">
-                    <input type="email" name="username" placeholder="Email Address"  title = "Введите ваш email" required>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="email" name="username" placeholder="Email Address"  title = "Введите ваш email" maxlength="35"required>
                 </div>
                 <div class="dws-input2">
-                    <input type="password"  id="password-input" class = "password" name="password" placeholder="Password" title = "Введите ваш пароль" required><br />
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password"  id="password-input" class = "password" name="password" placeholder="Password"maxlength="25" title = "Введите ваш пароль" required><br />
                     <a href="#" class="password-control"></a>
               </form>   
 
@@ -121,6 +123,7 @@
        
             <div class="form-with-img" title="Martian"></div>
     </div>    
+    
         <script src="./js/jquery-3.5.1.min.js"></script>
         <script src="./js/index.js"></script> 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
