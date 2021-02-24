@@ -8,7 +8,7 @@ body {
 a {
     color:#fff;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 a:hover{
    /* text-decoration: underline;*/
@@ -21,6 +21,39 @@ a::after {
     transition-delay: 10ms;
     color: #5e2828;
     opacity: 1;
+}
+.forgot_a_pass {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    line-height: 1;
+}
+.forgot_a_pass:hover{
+   /* text-decoration: underline;*/
+    color: #5e2828;
+    transition: all 500ms ease; 
+    transition-delay: 10ms;
+}  
+.forgot_a_pass::after {
+    transition: .3s ease all;
+    transition-delay: 10ms;
+    color: #5e2828;
+    opacity: 1;
+}
+.forgot_a_pass:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #5e2828; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.forgot_a_pass:hover:after,
+.forgot_a_pass:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 .form {
    width: 450px;
@@ -80,6 +113,7 @@ input::-webkit-input-placeholder {
     font-size: 1.2rem;
 }
 .button {
+    position: relative;
     padding: 13px 30px;
     width: 145px;
     margin: 4px 0 20px 0;
@@ -91,6 +125,7 @@ input::-webkit-input-placeholder {
     border-radius: 2px;
     letter-spacing: 3px;
     transition: 0.5s;
+    top:3px;
 }
 .button1 {
     padding: 13px 30px;
@@ -118,6 +153,7 @@ input::-webkit-input-placeholder {
     transition: all 0.5s;
     background: #fff;
     color: #144d70;
+    top: 10px;
 } 
 .btn {
     margin-right: 25px;
@@ -125,7 +161,6 @@ input::-webkit-input-placeholder {
 .buttons {
     display: flex;
     justify-content: center;    
-    margin-top: 7px;
 }
 .link {
     letter-spacing: 3px;
@@ -314,6 +349,7 @@ header {
     height: 40px;
     background: url("../img/svg/ShowPass.svg") 0 0 no-repeat;
     transition: 0.5s;
+    cursor: pointer;
 }
 .password-control.view {
     background: url("../img/svg/HidePass.svg") 0 0 no-repeat;
