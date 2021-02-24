@@ -46,3 +46,9 @@
         overflow-x:hidden;
    }
 }
+@media screen and (max-width: 530px) {
+  body{
+      background: url(../img/martian5.jpg) no-repeat;
+      background-size: auto;
+  }
+}
