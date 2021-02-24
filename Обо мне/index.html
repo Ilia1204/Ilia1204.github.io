@@ -649,16 +649,16 @@
         }
 
        // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction4()};
 
-function myFunction() {
+function myFunction4() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction4()};
 
 function myFunction2() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

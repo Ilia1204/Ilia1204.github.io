@@ -12,7 +12,13 @@ function toggleType() {
         input.type = 'password';
     }
 }
-
+$('body').on('click', '.showPassword', function(){
+	if ($(this).is(':checked')){
+		$('#password-input').attr('type', 'text');
+	} else {
+		$('#password-input').attr('type', 'password');
+	}
+}); 
 
 
 

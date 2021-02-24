@@ -159,9 +159,7 @@
     display: block;
     color: #fff; 
   }
-  .header2 {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -187,11 +185,7 @@
   .social-links a {
     display: none;
   }
-  .social-links a.icon {
-    float: right;
-    display: block;
-    color: #fff; 
-  }
+ 
 }
 
 @media screen and (max-width: 700px) {
