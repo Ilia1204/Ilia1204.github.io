@@ -64,16 +64,16 @@
         </ul>
     </div>
     <div class="container">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form" action="send.php" method="post">
             <div class="action">
                 <div class="dws-input">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="email" name="username" placeholder="Email Address"  title = "Введите ваш email" maxlength="35"required>
+                    <input type="email" name="email" placeholder="Email Address"  title = "Введите ваш email" maxlength="35"required>
                 </div>
                 <div class="dws-input2">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                     <input type="password"  id="password-input" class = "password" name="password" placeholder="Password"maxlength="25" title = "Введите ваш пароль" required><br />
-                    <label class="password-control"></label>
+                    <label class="password-control" title="Показать/Скрыть пароль"></label>
               </form>   
 
                 </div> 
@@ -86,7 +86,7 @@
                 <div class="group">
                     <input type="hidden" name="isPermanent" value="0">
                     <input id="check" name="isPermanent" value="1" type="checkbox" class="check" checked>
-                    <label for="check">
+                    <label for="check" title="Запомнить меня">
                         <span class="icon">
                         </span>
                         <span class="remember_me">Remember me</span>
