@@ -1,0 +1,54 @@
+@media screen and (max-width: 1366px) {
+    .container{
+        margin: 90px auto 0 auto;
+    }
+    .main {
+        margin: 7px auto 0 auto;
+    }
+    .container-forgot {
+        margin: 80px auto 0 auto;
+    }
+}
+@media screen and (max-width: 5000px) {
+  .header {
+    display: none;
+  }
+}
+@media screen and (max-width: 1140px) {
+    .menu .menu-lists {
+        display: inline-block;
+    }
+    .header a {
+      display: none;
+    }
+    .header a.icon {
+      float: right;
+      display: block;
+      color: #fff; 
+    }
+  }
+  
+  @media screen and (max-width: 1140px) {
+    .header.responsive {position: relative;}
+    .header.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .header.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+@media screen and (max-width: 767px) {
+   body {
+        overflow-x:hidden;
+   }
+}
+@media screen and (max-width: 530px) {
+  body{
+      background: url(../img/martian5.jpg) no-repeat;
+      background-size: auto;
+  }
+}
