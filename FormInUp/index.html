@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <div class="header" id="myheader">
@@ -64,7 +63,7 @@
         </ul>
     </div>
     <div class="container">
-        <form class="form" action="php/send.php" method="post">
+        <form class="form" action="php/login_user.php" method="post">
             <div class="action">
                 <div class="dws-input">
                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -72,21 +71,25 @@
                 </div>
                 <div class="dws-input2">
                     <i class="fa fa-lock" aria-hidden="true"></i>
+                    
                     <input type="password"  id="password-input" class = "password" name="password" placeholder="Password"maxlength="25" title = "Введите ваш пароль" required><br />
-                    <label class="password-control" title="Показать/Скрыть пароль"></label>
-              </form>   
-
-                </div> 
-                <div class="buttons">
+                    
+                    <label class="password-control"></label>
+                    
+                    <div class="buttons">
                     <div class="btn">
                         <input class="button" type="submit" name="submit" value="Sign In" title="Войти"><br />
                     </div>
                         <input onClick="window.location.href='register-form.html'" class="button" type="submit" name="submit" value="Sign Up" title="Зарегистрироваться"><br />
                 </div>
+                </form>   
+
+                </div> 
+                
                 <div class="group">
                     <input type="hidden" name="isPermanent" value="0">
                     <input id="check" name="isPermanent" value="1" type="checkbox" class="check" checked>
-                    <label for="check" title="Запомнить меня">
+                    <label for="check">
                         <span class="icon">
                         </span>
                         <span class="remember_me">Remember me</span>
@@ -153,5 +156,7 @@
             }
         </script>
         <script>history.scrollRestoration = "manual"</script>
+
+        
 </body>
 </html>

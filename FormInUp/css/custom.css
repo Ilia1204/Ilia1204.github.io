@@ -368,11 +368,6 @@ header {
     position:relative;
     display:inline-block;
     background: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-}
-.action .group label .icon:hover {
- 
-    background: rgba(255, 255, 255, 0.4);
 }
 .action .group label .icon:before,
 .action .group label .icon:after{
@@ -409,7 +404,6 @@ header {
 .remember_me {
     transition:0.5s;
     letter-spacing: 3px;
-    cursor: pointer;
 }
 @keyframes container {
     0% {

@@ -11,24 +11,24 @@
 </head>
 <body>
     <div class="main">
-        <form class="form" action="php/" method="post">
+        <form class="form" action="php/register_new_user.php" method="post">
             <div class="action">
                 <div class="dws-input">
-                    <input type="text" name="name" maxlength="15" placeholder="Your Name*" title="Введите ваше имя" required>
+                    <input type="text" name="name" maxlength="20" placeholder="Your Name*" title="Введите ваше имя" required>
                 </div>
                 <div class="dws-input">
-                    <input type="text" name="surname" maxlength="15" placeholder="Your Surname*" title="Введите вашу фамилию" required>
+                    <input type="text" name="surname" maxlength="20" placeholder="Your Surname*" title="Введите вашу фамилию" required>
                 </div>
                 <div class="dws-input">
-                    <input type="email" name="email_user" maxlength="20" placeholder="Email Address*" title="Введите ваш email-адрес"required>
+                    <input type="email" name="email_user" maxlength="35" placeholder="Email Address*" title="Введите ваш email-адрес"required>
                 </div>
                 <div class="dws-input">
                     <input type="text" name="user_id" maxlength="15" placeholder="Martian User ID*" title="Придумайте позывной" required>
                 </div>
                 <div class="dws-input2">
-                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Password*"  title="Придумайте пароль" required>
+                    <input type="password" class = "password" name="password" maxlength="25" placeholder="Password*"  title="Придумайте пароль" required>
                         <div class="dws-input3">
-                            <input type="password" class = "cor-password" id="password-input" name="cor-password" maxlength="20" placeholder="Confirm Password*" title="Повторите пароль" required><br />
+                            <input type="password" class = "cor-password" id="password-input" name="cor-password" maxlength="25" placeholder="Confirm Password*" title="Повторите пароль" required><br />
                             <div class="error" data-aos="fade-left">
                 </div>
         </form>
