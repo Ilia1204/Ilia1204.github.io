@@ -1,0 +1,46 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    background-image: url('../img/mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.person {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.person img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(0 0 0 / 0.1);
+    cursor: pointer;
+}
+.person img:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.person h2 {
+    color: #fd5a54;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.person span {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+}
