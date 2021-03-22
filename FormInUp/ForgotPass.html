@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgotPass</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ForgotPass.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+    <div class="container-forgot">
+        <form class="form" action="php/re_pass_user.php" method="post">
+            <div class="action">
+                <div class="dws-input">
+                    <input type="email" name="email" maxlength="35"  placeholder="Email Address" required>
+                </div>
+                    <span class="or-forgot">
+                        And
+                    </span>
+                <div class="dws-input-forgot">
+                    <input type="text" name="user_id" maxlength="15" placeholder="Username"required><br />
+                </div> 
+                <div class="buttons">
+                    <div class="btn2">
+                        <input class="button-forgot" type="submit" name="submit" value="Restore Password"><br />
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="btn">
+                        <input  onClick="window.location.href='index.html'" class="button" type="submit" name="submit" value="Sign In" title="Войти"><br />
+                    </div>
+                        <input onClick="window.location.href='register-form.html'" class="button" type="submit" name="submit" value="Sign Up" title="Зарегистрироваться"><br />
+                </div>
+            </div> 
+        </form>
+            <div class="form-with-img"></div>
+    </div>  
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/index.js"></script>   
+</body>
+</html>

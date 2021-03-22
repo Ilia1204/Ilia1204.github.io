@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+body {
+    background: url("../img/martian5.jpg") no-repeat;
+    background-size: 100%;
+    font-family: Lora;
+}  
+a {
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;    
+    color: #5e2828;
+}   
+.form {
+    width: 450px;
+    height: 450px;
+    background-image: url("../img/block-fon.jpg");
+    border-top-left-radius : 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+.btn {
+    margin-right: 25px;
+}
+.button {
+    padding: 13px 30px;
+    width: 145px;
+    margin: 4px 0 20px 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.button:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #144d70;
+} 
+.buttons {
+    display: flex;
+    justify-content: center;    
+    margin-top: 7px;
+}
+.form-with-img {
+     width: 450px;
+     height: 450px;
+     background-image: url("../img/form-with-image4.jpg");
+     border-top-right-radius : 15px;
+     border-bottom-right-radius: 15px;
+}
+.container-forgot{
+    position: relative;
+    width:900px;
+    height: 450px;
+    margin: 250px auto 0 auto;
+    text-align: center;
+    display: flex;
+    animation: container-forgot 2s 0s 1 linear;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    letter-spacing: 3px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+} 
+input:focus {
+  border-bottom: 2px solid #fff;
+}  
+input::-webkit-input-placeholder { 
+    color: #fff;
+}
+.button-forgot {
+    padding: 13px 30px;
+    width: 280px;
+    margin: 4px 0 20px 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.button-forgot:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #144d70;
+} 
+.btn2 {
+    margin-right: 25px;
+    position: relative;
+    left: 3%;
+    top: -10px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;    
+    margin-top: 7px;
+}
+.link {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+.forgot-password {
+    margin-top: 25px;
+    font-size: 25px;
+}
+.action {
+    margin-top: 65px;
+}
+.register{
+    margin-top:10px;
+    font-size: 25px;
+}
+.link-now {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+label {
+    position: relative;
+    left: 19%;
+}
+.link1 {
+    color: rgb(235, 229, 229);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.or-forgot {
+    font-size: 18px;
+    color: rgb(235, 224, 224);
+    position: relative;
+    left: 31%;
+}
+.dws-input-forgot {
+    position: relative;
+    top:-20px
+}
+@keyframes container-forgot {
+    0% {
+     transform: RotateX(0);  
+    }
+   /* 50% {
+        transform: RotateX(180deg);
+    }*/
+    100% {
+        transform: RotateX(360deg);
+    }
+  }         
+ 

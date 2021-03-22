@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+body {
+    background: url("../img/martian5.jpg") no-repeat;
+    background-size: 100%;
+    font-family: Lora;
+}  
+a {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+   /* text-decoration: underline;*/
+    color: #5e2828;
+    transition: all 500ms ease; 
+    transition-delay: 10ms;
+}   
+a::after {
+    transition: .3s ease all;
+    transition-delay: 10ms;
+    color: #5e2828;
+    opacity: 1;
+}
+.forgot_a_pass {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    line-height: 1;
+}
+.forgot_a_pass:hover{
+   /* text-decoration: underline;*/
+    color: #5e2828;
+    transition: all 500ms ease; 
+    transition-delay: 10ms;
+}  
+.forgot_a_pass::after {
+    transition: .3s ease all;
+    transition-delay: 10ms;
+    color: #5e2828;
+    opacity: 1;
+}
+.forgot_a_pass:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #5e2828; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.forgot_a_pass:hover:after,
+.forgot_a_pass:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.form {
+   width: 450px;
+   height: 450px;
+   background-image: url("../img/block-fon.jpg");
+   border-top-left-radius : 15px;
+   border-bottom-left-radius: 15px;
+}
+.form-with-img {
+    width: 450px;
+    height: 450px;
+    background-image: url("../img/form-with-image4.jpg");
+    border-top-right-radius : 15px;
+    border-bottom-right-radius: 15px;
+ }
+.container{
+    position: relative;
+    width:900px;
+    height: 450px;
+    margin: 250px auto 0 auto;
+    text-align: center;
+    display: flex;
+    animation: container 2s 0s 1 ease-in-out;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    letter-spacing: 3px;
+    border: none;outline:none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+} 
+input:focus {
+   border-bottom: 2px solid #fff;
+}  
+input::-webkit-input-placeholder { 
+    color: #fff;
+    position: relative;
+}
+.dws-input2 {
+    position: relative;
+    top: -10px;
+}
+.dws-input .fa {
+    position: relative;
+    color: #fff;
+    right: 10px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.dws-input .fa:hover {
+    transform: rotateY(360deg);
+}
+.dws-input2 .fa {
+    color: #fff;
+    position: relative;
+    right: 10px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.dws-input2 .fa:hover {
+    transform: rotateY(360deg);
+}
+.button {
+    position: relative;
+    padding: 13px 30px;
+    width: 145px;
+    margin: 4px 0 20px 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    top:3px;
+}
+.button1 {
+    padding: 13px 30px;
+    width: 165px;
+    margin: 4px 0 20px 0;
+    font-size: 23px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 15px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.button1:hover {
+    transition: all 1s;
+    background: #fff;
+    color: #e24545;
+} 
+@font-face {
+    font-family: Clarendon; /* Имя шрифта */
+    src: url(/fonts/clarendon.ttf); /* Путь к файлу со шрифтом */
+}
+.button:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #144d70;
+    top: 10px;
+} 
+.btn {
+    margin-right: 25px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;    
+}
+.link {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+.forgot {
+    margin-top: 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.action {
+    margin-top: 30px;
+}
+.register{
+    margin-top:10px;
+}
+.link-now {
+    letter-spacing: 3px;
+    font-size: 21px;
+}
+label {
+    position: relative;
+    left: 19%;
+}
+.link1 {
+    color: rgb(235, 229, 229);
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    justify-content: center;
+}
+.social-links li {
+    display: flex;
+    margin: 0 4px;
+}
+.social-links a {
+    padding: 16px;
+    line-height: 0;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255,.25);
+    transition: .3s border;
+}
+.social-links a:hover {
+    border-color: #fff;
+}
+.social-links a:hover img {
+    transform: scale(1.5);
+}
+.social-links a img {
+    height: 16px;
+    width: 16px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+header {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.menu li.active, .menu li:hover {
+    color: #fd5a54;
+}
+.menu li {
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    
+}
+.menu li:after {
+    opacity: 0;
+    transform: translateY(2px);
+    transition: .3s ease all;
+}
+.menu li:hover:after {
+    opacity: 1;
+    transform: translateY(-3px);
+}   
+.menu li:hover {
+    padding: 8px;
+    color: #fd5a54;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.menu .menu-lists {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.menu .menu-lists .lists-item{
+    display: flex;
+    position: relative;
+}
+
+.menu .menu-lists .lists-item a.active::after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.menu .lists-item a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 1500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px 0;
+    margin: 0 23px;
+    text-decoration: none;
+}
+
+.menu .lists-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #fd5a54;
+    height: 2px;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: .3s ease all;
+}
+
+.menu .lists-item a:hover:after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.header-form-sign-in {
+    color: #fff;
+}
+.header {
+    overflow: hidden;
+    background-color: transparent;
+}
+.header a {
+    float: left;
+    display: block;
+    color: transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.header a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.active {
+    background-color: transparent;
+    color: white;
+}
+.header .icon {
+    display: none;
+}
+.password-control {
+    position: absolute;
+    top: 15px;
+    left: 360px;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background: url("../img/svg/ShowPass.svg") 0 0 no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.password-control.view {
+    background: url("../img/svg/HidePass.svg") 0 0 no-repeat;
+}
+.check {
+    display: none;
+}
+.action .group {
+    margin-bottom:15px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.action .group label .icon{
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    background: rgba(255, 255, 255, 0.3);
+}
+.action .group label .icon:before,
+.action .group label .icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    background:#fff;
+    position:absolute;
+    transition:all .2s ease-in-out 0s;
+}
+.action .group label .icon:before{
+    left:3px;
+    width:5px;
+    bottom:6px;
+    transform:scale(0) rotate(0);
+}
+.action .group label .icon:after{
+    top:6px;
+    right:0;
+    transform:scale(0) rotate(0);
+}
+.action .group .check:checked + label{
+    color:#fff;
+}
+.action .group .check:checked + label .icon{
+    background:#1161ee;
+}
+.action .group .check:checked + label .icon:before{
+    transform:scale(1) rotate(45deg);
+}
+.action .group .check:checked + label .icon:after{
+    transform:scale(1) rotate(-45deg);
+}
+.remember_me {
+    transition:0.5s;
+    letter-spacing: 3px;
+}
+@keyframes container {
+    0% {
+     transform: RotateX(0)
+    }
+   /* 50% {
+        transform: RotateX(180deg);
+    }*/
+    100% {
+        transform: RotateX(360deg);
+       }
+  }         
+ 

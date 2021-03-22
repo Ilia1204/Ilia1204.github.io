@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База данных</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-window">
+            <ul class="modal-window-close">
+                <li class="modal_2">Добавить пользователя</li>
+                <li class="close">❌</li>
+            </ul>
+            <h1 class="h1_add_user">Добавить пользователя</h1>
+            <table class="table_modal_window">
+                <tr>
+                    <td>Host:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="Host"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td>Surname:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="password" placeholder="Surname"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="password" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Nickname:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="password" placeholder="Nickname"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td>Con_Password:</td>
+                    <td>
+                        <select name="" id="">
+                            <option>Use Text</option>
+                            <option>Use Numbers</option>
+                            <option>Use Text and Numbers</option>
+                        </select>
+                    </td>
+                    <td><input type="password" placeholder="Con_Password"></td>
+                </tr>
+            </table>
+        <hr>
+        </div>
+    </div>
+        <header class="header">
+            <img src="img/logo.png" alt="Admin Panel">
+            <h1>PHP CRUD GENERATOR</h1>
+
+            <button class="header-button">
+                <span class="material-icons person">person</span>
+                <i class="arrow_right"></i>
+            </button>
+        </header>
+               <hr class="hr-header">
+               <p class="rental-header">/ <span class="material-icons home">
+                home
+                </span> / rental</p>
+              
+    <div class="container">
+       <header class="main-header">
+           <h2 class="h2_main_header">User Name</h2>
+           <p class="p_main_header" >Profile</p>
+           <a href="#">
+               <i class="arrow_down"></i>
+           </a>
+       </header> 
+
+        <ul class="list-main">
+            <li class="list-main-li">CUSTOMER DATA</li>
+            <hr class="hr-list-li">
+            <li class="list-main-li">
+                <span class="material-icons language">
+                    language
+                </span>
+                    country
+            </li>
+            <hr class="hr-list-li">
+            <li class="list-main-li">
+                <span class="material-icons shopping_cart">
+                    shopping_cart
+                </span>
+                    rental
+            </li>
+            <hr class="hr-list-li">
+            <li class="list-main-li">BUSINESS</li>
+            <hr class="hr-list-li">
+            <li class="list-main-li">CAT</li>
+            <hr class="hr-list-li">
+            <li class="list-main-li">NEW CATEGORY</li>
+        </ul>
+
+        <main class="main_container">
+            <header class="header-main">
+                <a href="#" class="button_main_container">
+                    <span class="material-icons add_button">
+                        add
+                    </span> ADD NEW
+                </a>
+                <a href="#" class="button_main_container-2">
+                    <span class="material-icons file_upload">
+                        file_upload
+                    </span>
+                    <i class="arrow_right_2"></i>
+                </a>
+                <div class="page_results">
+                    <p class="Results_page">
+                        Results/page: 
+                    </p>
+                    <input type="number" class="input_number" name="input_number" placeholder="5" min="1" max="1000" maxlength="1000">
+                </div>
+            </header>
+            
+            <div class="main_container_after_header">
+                <table class="table_table-dark_table-hover" cellpadding="15">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Action</th>
+                            <th>rental id</th>
+                            <th>rental date</th>
+                            <th>customer id</th>
+                            <th>
+                                <span class="material-icons">
+                                    unfold_more
+                                </span>
+                            </th>
+                            <th>Display</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td data-label="Flight No." class="td_1_arrow_down">
+                                <span class="material-icons play_arrow">
+                                    play_arrow
+                                </span>
+                            </td>
+                            <td data-label="Destination">
+                                <button class="button open-modal" name="submit"  title="Edit">
+                                    <span class="material-icons mode">
+                                        mode
+                                    </span>
+                                </button> 
+                                <button class="button_2"  name="submit"  title="Delete">
+                                    <span class="material-icons cancel">
+                                        cancel
+                                    </span>
+                                </button> 
+                            </td>
+                            <td data-label="Time">1</td>
+                            <td data-label="Gate">24 May 2005 22:54 pm</td>
+                            <td data-label="Status">1 HUNTER</td>
+                            <td data-label="Status">&nbsp;</td>
+                            <td data-label="Status"class="td_label">
+                                <span class="material-icons share">
+                                    share
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Flight No." class="td_1_arrow_down">
+                                <span class="material-icons play_arrow">
+                                    play_arrow
+                                </span>
+                            </td>
+                            <td data-label="Destination">
+                                <button class="button open-modal"  name="submit"  title="Edit">
+                                    <span class="material-icons mode">
+                                        mode
+                                    </span>
+                                </button>  
+                                <button class="button_2 cancel"  name="submit"  title="Delete">
+                                    <span class="material-icons cancel">
+                                        cancel
+                                    </span>
+                                </button> 
+                            </td>
+                            <td data-label="Time">2</td>
+                            <td data-label="Gate">24 May 2005 22:54 pm</td>
+                            <td data-label="Status">1 HUNTER</td>
+                            <td data-label="Status">&nbsp;</td>
+                            <td data-label="Status"class="td_label">
+                                <span class="material-icons share">
+                                    share
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Flight No." class="td_1_arrow_down">
+                                <span class="material-icons play_arrow">
+                                    play_arrow
+                                </span>
+                            </td>
+                            <td data-label="Destination">
+                                <button class="button open-modal"  name="submit"  title="Edit">
+                                    <span class="material-icons mode">
+                                        mode
+                                    </span>
+                                </button>  
+                                <button class="button_2"  name="submit"  title="Delete">
+                                    <span class="material-icons cancel">
+                                        cancel
+                                    </span>
+                                </button> 
+                            </td>
+                            <td data-label="Time">3</td>
+                            <td data-label="Gate">24 May 2005 22:54 pm</td>
+                            <td data-label="Status" class="cancelled">1 HUNTER</td>
+                            <td data-label="Status">&nbsp;</td>
+                            <td data-label="Status" class="td_label">
+                                <span class="material-icons share">
+                                    share
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Flight No." class="td_1_arrow_down">
+                                <span class="material-icons play_arrow">
+                                    play_arrow
+                                </span>
+                            </td>
+                            <td data-label="Destination">
+                                <button class="button open-modal"  name="submit"  title="Edit">
+                                    <span class="material-icons mode">
+                                        mode
+                                    </span>
+                                </button>  
+                                <button class="button_2"  name="submit"  title="Delete">
+                                    <span class="material-icons cancel">
+                                        cancel
+                                    </span>
+                                </button> 
+                            </td>
+                            <td data-label="Time">4</td>
+                            <td data-label="Gate">24 May 2005 22:54 pm</td>
+                            <td data-label="Status">1 HUNTER</td>
+                            <td data-label="Status">&nbsp;</td>
+                            <td data-label="Status" class="td_label">
+                                <span class="material-icons share">
+                                    share
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Flight No." class="td_1_arrow_down">
+                                <span class="material-icons play_arrow">
+                                    play_arrow
+                                </span>
+                            </td>
+                            <td data-label="Destination">
+                                <button class="button open-modal"  name="submit"  title="Edit">
+                                    <span class="material-icons mode">
+                                        mode
+                                    </span>
+                                </button>  
+                                <button class="button_2"  name="submit"  title="Delete">
+                                    <span class="material-icons cancel">
+                                        cancel
+                                    </span>
+                                </button>  
+                            </td>
+                            <td data-label="Time">5</td>
+                            <td data-label="Gate">24 May 2005 22:54 pm</td>
+                            <td data-label="Status">1 HUNTER</td>
+                            <td data-label="Status">&nbsp;</td>
+                            <td data-label="Status" class="td_label">
+                                <span class="material-icons share">
+                                    share
+                                </span>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+                
+            
+            
+            <footer class="footer-main">
+                    
+                    <ul class="list_footer">
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li-1">
+                               Page
+                            </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                1
+                           </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                2
+                           </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                3
+                           </li>
+                        </a>
+                        <a href="" class="a_footer">
+                            <li class="li_footer_li">
+                                4
+                            </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                5
+                           </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                6
+                            </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                7
+                           </li>
+                        </a>
+                        <a href="" class="a_footer">
+                           <li class="li_footer_li">
+                                8
+                           </li>
+                        </a>
+                    </ul>
+                <p class="p_results">
+                    <span class="span_p_results">
+                        Results
+                    </span> 
+                        1 
+                    <span class="span_p_results">
+                        to
+                    </span> 
+                        5 
+                    <span class="span_p_results">
+                        or 
+                    </span>
+                        16044
+                </p>
+            </footer>
+        </main>
+    </div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

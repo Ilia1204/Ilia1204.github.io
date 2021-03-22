@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martian</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/ModalWindow.css">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header" id="myheader">
+        <ul class="social-links">
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <form class="form" action="php/login_user.php" method="post">
+            <div class="action">
+                <div class="dws-input">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="email" name="email" placeholder="Email Address"  title = "Введите ваш email" maxlength="35"required>
+                </div>
+                <div class="dws-input2">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    
+                    <input type="password"  id="password-input" class = "password" name="password" placeholder="Password"maxlength="25" title = "Введите ваш пароль" required><br />
+                    
+                    <label class="password-control"></label>
+                    
+                    <div class="buttons">
+                    <div class="btn">
+                        <input class="button" type="submit" name="submit" value="Sign In" title="Войти"><br />
+                    </div>
+                        <input onClick="window.location.href='register-form.html'" class="button" type="submit" name="submit" value="Sign Up" title="Зарегистрироваться"><br />
+                </div>
+                </form>   
+
+                </div> 
+                
+                <div class="group">
+                    <input type="hidden" name="isPermanent" value="0">
+                    <input id="check" name="isPermanent" value="1" type="checkbox" class="check" checked>
+                    <label for="check">
+                        <span class="icon">
+                        </span>
+                        <span class="remember_me">Remember me</span>
+                    </label>
+                </div>
+                <div class="forgot">
+                    <a href="ForgotPass.html" title="Забыли пароль" class="forgot_a_pass">
+                       Forgot <span class="forgot-pass">password?</span>
+                    </a>
+                </div>
+                <ul class="social-links" >
+                    <li title="Мы в facebook">
+                        <a href="#">
+                            <img src="./img/social/facebook-white.svg" alt="facebook" >
+                        </a>
+                    </li>
+                    
+                    <li title="Мы в twitter">
+                        <a href="#">
+                            <img src="./img/social/twitter-white.svg" alt="twitter" >
+                        </a>
+                    </li>
+        
+                    <li title="Мы в pinterest">
+                        <a href="#">
+                            <img src="./img/social/pinterest-white.svg" alt="pinterest" >
+                        </a>
+                    </li>
+        
+                    <li title="Мы в linkedin">
+                        <a href="#">
+                            <img src="./img/social/linkedin-white.svg" alt="linkedin">
+                        </a>
+                    </li>
+        
+                    <li title="Мы в instagram">
+                        <a href="#">
+                            <img src="./img/social/instagram-white.svg" alt="instagram" >
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+       
+            <div class="form-with-img" title="Martian"></div>
+    </div>    
+    
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/index.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+        <script type="./js/jquery.cookie.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myheader");
+                    if (x.className === "header") {
+                        x.className += " responsive";
+                    } 
+                    else {
+                        x.className = "header";
+                    }
+            }
+        </script>
+        <script>history.scrollRestoration = "manual"</script>
+
+        
+</body>
+</html>
