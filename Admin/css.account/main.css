@@ -1,0 +1,132 @@
+.container #personal_account {
+    background-color: hsla(0,0%,100%,.13);
+    position: relative;
+    border-radius: 5px;
+    padding: 60px 160px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(0 54 60 / 20%);
+}
+#personal_account .person_account {
+    padding: 0;
+}
+.flex_a {
+    display: flex;
+}
+.hamburger {
+    display: none;
+}
+.hamburger:hover {
+    cursor: pointer;
+}
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 6px auto;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+}
+.first_line {
+    transform: translateY(9px) rotate(45deg);
+}
+.second_line {
+    opacity: 0;
+}
+.third_line {
+    transform: translateY(-9px) rotate(-45deg);
+}
+.flex_account {
+    display: flex;
+}
+.left_dash {
+    margin-top: 170px;
+    border: 1px solid hsla(0,0%,100%,.15);
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 40px;
+}
+.avatar {
+    padding: 10px 15px 24px;
+}
+.top_line {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_line a>svg {
+    transition: all .6s ease;
+    fill: #fff;
+}
+.top_line a>svg:hover {
+    fill: #13e780;
+}
+.user {
+    margin-right: 15px;
+}
+.top_line a {
+    text-decoration: none;
+}
+.ava {
+    margin: 0 auto;
+    text-align: center;
+}
+.avatar-image {
+    width: 130px;
+    height: 130px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto 15px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    border-radius: 50%;
+}
+.name {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.ava p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+#main {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(150vh + 30px);
+    position: relative;
+}
+.svg_close {
+    margin-left: 60px;
+}
+.menu_dash ul {
+    list-style-type: none;
+}
+.menu_dash ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .6s ease-in-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+.menu_dash ul li a:hover {
+    color:#13e780;
+}
+.menu_dash ul li a svg {
+    transition: fill .6s ease-in-out;
+    fill: #fff;
+    margin-right: 15px;
+    width: 18px;
+}
+.menu_dash ul li a i {
+    font-size: normal;
+}
