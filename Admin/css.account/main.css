@@ -1,3 +1,11 @@
+html {
+    overflow-x: hidden;
+}
+body .kraska { 
+    background-image: linear-gradient(45deg
+,#ba03f2,#13e780);
+
+}
 .container #personal_account {
     background-color: hsla(0,0%,100%,.13);
     position: relative;
@@ -100,8 +108,8 @@
     height: calc(150vh + 30px);
     position: relative;
 }
-.svg_close {
-    margin-left: 60px;
+.menu_dash {
+     border-top: 1px solid hsla(0,0%,100%,.15);
 }
 .menu_dash ul {
     list-style-type: none;
@@ -127,6 +135,204 @@
     margin-right: 15px;
     width: 18px;
 }
+.menu_dash ul li a svg:hover {
+    fill: #13e780;
+}
 .menu_dash ul li a i {
-    font-size: normal;
+    font-style: normal;
+}
+.right-icon {
+    position: relative;
+    left: 150px;
+}
+.money_item {
+    margin-top: 50px;
+}
+.money_item a {
+    padding: 15px 30px;
+    background-color: hsla(0,0%,100%,.2);
+}
+.money_item a svg {
+    margin-right: 10px;
+}
+.money_item a svg:hover {
+    fill: #13e780;
+}
+.stat {
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    border-right: 1px solid hsla(0,0%,100%,.15);
+    padding: 37.5px 30px;
+    position: relative;
+    top: 170px;
+}
+.nomargin div:first-child {
+    margin-top: 0;
+}
+.alert-warning {
+    color: #ffeeba;
+    border-color: #ffeeba;
+}
+.alert {
+    position: relative;
+    padding: 15px 50px;
+    margin-bottom: 1rem;
+    border: 1px solid #13e780;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+    text-align: left;
+}
+.alert-warning:before {
+    background-image: url(img/logo.svg);
+}
+.alert:before {
+    content: "";
+    width: 26px;
+    height: 33px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+::-webkit-scrollbar-button {
+    background-image: url(''); 
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #14e781;
+}
+::-webkit-scrollbar-corner {
+    background-repeat: no-repeat;
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 6px;
+}
+.day {
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+    position: relative;
+    top: 171px;
+    border-right: 1px solid hsla(0,0%,100%,.15);
+}
+.progress_line .day_b {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.progress_wrapper {
+    display: flex;
+    align-items: center;
+}
+.progress_bar {
+    border-radius: 10px;
+    width: 86%;
+    height: 15px;
+}
+.current_progress_bar {
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#03daf2,#13e780);
+    height: inherit;
+    transition: all .6s ease;
+    max-width: 100%;
+    margin-left: 20px;
+}
+.count_day {
+    width: 14%;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.progress_line p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+.dash_section_heading {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.feedback_area {
+    border-radius: 5px;
+    background-color: rgba(10,155,112,.3);
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    padding: 15px;
+    resize: none;
+    min-height: 150px;
+    border: 1px solid transparent;
+    display: block;
+    transition: border .4s ease-in-out;
+    margin: 0 auto;
+}
+.feedback_area:hover {
+    border: 1px solid #13e780;
+}
+.feedback_dash {
+    position: relative;
+    top: 155px;
+    padding: 71px;
+    border-right: 1px solid hsla(0,0%,100%,.15);
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+}
+.btn {
+    padding: 10px 24px;
+    color: #fff;
+    background-image: linear-gradient(90deg,#13e780,#03daf2);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 43%;
+}
+.btn:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg,#ba03f2,#13e780);
+    z-index: -1;
+    transition: opacity .5s linear;
+    opacity: 0;
+    border-radius: 20px;
 }

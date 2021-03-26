@@ -35,3 +35,6 @@
         $('span:nth-child(3)').toggleClass('third_line');
         $('.menu_top').toggleClass('menu_top_active');
     });
+    
+    //$(this).toggleClass("is-active"), 
+    //$(this).hasClass("is-active") ? $(".mnu_top").slideDown(300) : $(".mnu_top").slideUp(300)

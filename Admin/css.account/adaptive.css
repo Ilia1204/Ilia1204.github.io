@@ -1,14 +1,15 @@
-@media screen and (max-width: 850px) {
+
+@media screen and (max-width: 900px) {
     .hamburger {
         display: block;
         margin-right: 30px;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .menu_top {
         display: none;
     }
-     .menu_top_active {
+    .menu_top_active {
         position: absolute;
         background-color: #fff;
         border-radius: 5px;
@@ -19,17 +20,18 @@
         z-index: 10;
         box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
         transition: 0.5s;
+        animation-name: FadeIn;
      }
      .cancel.first_line {
         display: none;
      }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .menu_top li {
         display: block;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .menu_top li a {
         display: block;
         padding: 10px 15px;
@@ -60,9 +62,78 @@
         padding: 1px 15px;
         font-size: 15px;
     }   
+    .right-icon {
+        position: relative;
+        left: 100px;
+    }
+    .money_item a {
+        padding: 14px;
+    }
+    .money_item a svg {
+        margin-right: 5px;
+    }
+    .alert {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .menu_dash ul li a svg {
         padding: 0px 0px;
+    }
+    .progress_bar {
+        width: 82%;
+    }
+    .count_day {
+        width: 16%;
+    }
+}
+@media screen and (max-width: 330px) {
+    .menu_top_active {
+        right: auto;
+    }
+} 
+@media screen and (max-width: 650px) {
+    .left_dash {
+        margin: 0 auto;
+        position: relative;
+        top: 175px;
+    } 
+    .center_cont {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .col-lg-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .progress_line b {
+        font-size: 14px;
+    }
+    .progress_bar {
+        width: 78%;
+    }
+    .count_day {
+        width: 20%;
+        font-size: 14px;
+    }
+    .feedback_area {
+        padding: 25px;
+        width: 70%;
+    }
+    .feedback_area {
+        font-size: 14px;
+    }
+}
+@keyframes FadeIn {
+    0% {
+        opacity: 1;
+        transform: translateY(startYposition);
+    } 
+    100% {
+        opacity: 0;
+        transform: translateY(endYposition);
     }
 }

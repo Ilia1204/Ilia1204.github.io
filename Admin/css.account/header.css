@@ -9,6 +9,7 @@ body {
    overflow-x: hidden;
    opacity: 1;
    font-family: "Lora";
+   overflow:  hidden;
 }
 header {
     position: absolute;
@@ -60,7 +61,7 @@ a {
     height: 2px;
     width: 0;
     transition: width .5s;
-    background-color: rgb(27, 27, 27);
+    background-color: #13e780;
     cursor: pointer;
     display: block;
     margin-top: 5.5px;
