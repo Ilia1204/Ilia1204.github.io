@@ -36,8 +36,9 @@ $(function() {
         }
     });
     $(document).ready(function(){
-  $('.icon').click(function(){
+  $('.icn').click(function(){
     $(this).toggleClass('open');
+    $('open').slideDown(300);
   });
 });
     navMenuLink();
@@ -78,4 +79,11 @@ $(document).ready(function(){
   });
 });
 
-$(".span.material-icons.menu").toggleClass(".span.material-icons.arrow_right_alt");
+
+
+    $('.hamburger').click(function() {
+      $('span:nth-child(1)').toggleClass('first_line');
+      $('span:nth-child(2)').toggleClass('second_line');
+      $('span:nth-child(3)').toggleClass('third_line');
+      $('ul.menu_lists').toggleClass('menu_top_active');
+    });

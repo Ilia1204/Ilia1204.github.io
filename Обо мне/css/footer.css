@@ -74,13 +74,10 @@
 }
 .social-links li {
     display: flex;
-    margin: 0 4px;
+    margin: 0 10px;
 }
 .social-links a {
-    padding: 16px;
     line-height: 0;
-    border-radius: 100%;
-    border: 1px solid rgba(255,255,255,.25);
     transition: .3s border;
 }
 .social-links a:hover {
@@ -98,6 +95,9 @@
 .legal-menu {
     margin: 20px 0 0 0;
 }
+.legal-menu ul li{
+    text-align: center;
+}
 .legal-menu ul {
     display: flex;
     flex-direction: row;
@@ -110,6 +110,7 @@
     line-height: 28px;
     font-weight: 400;
     margin: 0 5px;
+    transition: 0.5s;
 }
 .legal-menu ul li a:hover {
     color: #fff;
@@ -127,32 +128,4 @@
     align-items: center;
     justify-content: space-around;
     background-color: #0a0a0ae0;
-}
-/*.simple-spinner {
-    height: 50px;
-    width: 50px;
-    border: 5px solid rgba(150, 150, 150, 0.2);
-    border-radius: 50%;
-    border-top-color: rgba(150, 150, 150);
-
-    
-    /*
-        animation
-        Параметры
-        1 название анимации
-        2 длительность анимации
-        3 через сколько после загрузки стр начинать анимацию
-        4 бесконечность
-        5 как наша аниация работает (linear, ease... и тд.)
-    */
-  /*  animation: rotate 1s 0s infinite linear;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
