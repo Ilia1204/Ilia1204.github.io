@@ -145,19 +145,6 @@ body .kraska {
     position: relative;
     left: 150px;
 }
-.money_item {
-    margin-top: 50px;
-}
-.money_item a {
-    padding: 15px 30px;
-    background-color: hsla(0,0%,100%,.2);
-}
-.money_item a svg {
-    margin-right: 10px;
-}
-.money_item a svg:hover {
-    fill: #13e780;
-}
 .stat {
     border-bottom: 1px solid hsla(0,0%,100%,.15);
     border-top: 1px solid hsla(0,0%,100%,.15);
@@ -275,10 +262,14 @@ body .kraska {
 }
 .dash_section_heading {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 30px;
+    
+}
+.dash_section_heading::selection {
+    background-color: #13e780;
 }
 .feedback_area {
     border-radius: 5px;
@@ -300,14 +291,13 @@ body .kraska {
 .feedback_dash {
     position: relative;
     top: 155px;
-    padding: 71px;
     border-right: 1px solid hsla(0,0%,100%,.15);
     border-bottom: 1px solid hsla(0,0%,100%,.15);
 }
 .btn {
     padding: 10px 24px;
     color: #fff;
-    background-image: linear-gradient(90deg,#13e780,#03daf2);
+    background-color: rgb(255, 102, 14);
     border-radius: 20px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
     text-transform: uppercase;
@@ -335,4 +325,97 @@ body .kraska {
     transition: opacity .5s linear;
     opacity: 0;
     border-radius: 20px;
+}
+.right_part {
+    color:#fff;
+    margin-top: 170px;
+    width: 81%;
+    border-bottom:1px solid hsla(0,0%,100%,.15);
+    border-top:1px solid hsla(0,0%,100%,.15);
+    border-right:1px solid hsla(0,0%,100%,.15);
+}
+.right_part h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.email_photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32.5px;
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+}
+.p50 {
+    padding: 44px;
+}
+div.email_photo.p50 {
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+}
+.photo_left {
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-right: 30px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+.email_photo>.right_pro_photo>label:first-child {
+    margin: 0 0 20px;
+}
+.flex_dashboard>.right_max_side .style_form_dashboard label, .style_form_dashboard label {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.right_change label:first-child {
+    display: flex;
+}
+label p {
+    width: 58px;
+    display: inline-block;
+    text-align: left;
+}
+input[type=password], input[type=text], input[type=email], select, textarea {
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 20px;
+    margin-left: 15px;
+    width: 100%;
+    display: inline-block;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: rgba(10,155,112,.5);
+    transition: border .4s ease-in-out;
+    border: 1px solid transparent;
+}
+input[type=file] {
+    padding: 10px 24px;
+    color: #fff;
+    background-color: rgb(255, 102, 14);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+}
+.main_settings {
+    border-top: 1px solid hsla(0,0%,100%,.15);
+}
+.row {
+    margin: 0;
 }

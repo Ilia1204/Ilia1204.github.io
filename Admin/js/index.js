@@ -1,7 +1,3 @@
-    /*
-        Модальное окно
-    */
-
     // Открытие Модального окна через кнопку
     $('.open-modal').click(function() {
         $('.modal').show();
@@ -23,18 +19,22 @@
         }
     });
 
-     $('.header-button').hover(function() {
-       $('div.dropdown', this).slideDown(500);    
-   },function() {
-       $('div.dropdown', this).slideUp(500);             
-   });
+     
+    $('.dropdown').hover(function() {
+       $('.dropdown-content').slideDown(300);    
+        },function() {
+       $('.dropdown-content').slideUp(300);             
+    });
 
-   $('.hamburger').click(function() {
+   
+   
+    $('.hamburger').click(function() {
         $('span:nth-child(1)').toggleClass('first_line');
         $('span:nth-child(2)').toggleClass('second_line');
         $('span:nth-child(3)').toggleClass('third_line');
         $('.menu_top').toggleClass('menu_top_active');
     });
     
-    //$(this).toggleClass("is-active"), 
-    //$(this).hasClass("is-active") ? $(".mnu_top").slideDown(300) : $(".mnu_top").slideUp(300)
+    $('.hamburger').click(function() {
+        $('.menu_top_active').slideDown(300);
+    });
