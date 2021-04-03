@@ -6,6 +6,12 @@
 		width: 410px;
 		height: 700px;
 	}
+	.button_trailer {
+		left: 37%;
+	}
+	.time_trailer {
+		left: 128%;
+	}
 }
 @media screen and (max-width: 750px) {
 	h1 {
@@ -14,6 +20,12 @@
 	.poster img {
 		width: 370px;
 		height: 600px;
+	}
+	.button_trailer {
+		left: 23%;
+	}
+	.time_trailer {
+		left: 113%;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -24,10 +36,38 @@
 		width: 300px;
 		height: 500px;
 	}
+	.button_trailer {
+		left: 6%;
+	}
+	.time_trailer {
+		left: 81%;
+	}
+	.poster-review .video-review img {
+		width: 275px;
+		height: 167px;
+	}
 }
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 30px;
+	}
+	.facts-name {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.facts-name {
+		font-size: 27px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.facts-name {
+		font-size: 23px;
+	}
+}
+@media screen and (max-width: 430px) {
+	.facts-name {
+		font-size: 21px;
 	}
 }
 @media screen and (max-width: 450px) {
@@ -38,10 +78,20 @@
 }
 @media screen and (max-width: 350px) {
 	h1 {
-		font-size: 27px;
+		font-size: 25px;
 	}
 	.poster img {
 		width: 250px;
 		height: 400px;
+	}
+	.poster-review .video-review img {
+		width: 250px;
+		height: 142px;
+	}
+	.button_trailer {
+		left: 1%;
+	}
+	.time_trailer {
+		left: 58%;
 	}
 }

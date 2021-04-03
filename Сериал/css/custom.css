@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
+html {
+	overflow-x: hidden;
+}
 body {
 	margin: 0;
 	background-image: linear-gradient(180deg, #000 724px, #232323 99%);
@@ -48,6 +50,26 @@ h1:hover {
 	display: block;
 	margin: 0 auto;
 }
+.soundtrack {
+	position: absolute;
+	right: 40px;
+	bottom: 132px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 13px;
+	width: 32px;
+	height: 32px;
+	font-size: 0;
+	cursor: pointer;
+	border: 0;
+	transition: 0.3s;
+	background-image: url('../img/svg/soundtrack.svg');
+	border-radius: 3px;
+	background-color: rgba(85, 85, 85, 0.6);
+}
+.soundtrack:hover {
+	background-color: #555;
+}
 .poster-review {
 	display: flex;
 	flex-direction: column;
@@ -79,7 +101,25 @@ h1:hover {
 	position: relative;
 	top: 1px;
 }
-
+.date_serial {
+	color: hsla(0, 0%, 100%, 0.4);
+	font-size: 15px;
+	line-height: 14px;
+	text-align: center;
+	margin-top: 10px;
+	transition: color 0.1s ease-in-out;
+}
+.date_trailer {
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 17px;
+	transition: color 0.3s ease-in-out;
+	cursor: pointer;
+}
+.date_trailer:hover {
+	color: #ff6600;
+}
 .ks-points {
 	color: #093;
 	font-size: 32px;
@@ -199,10 +239,6 @@ button {
 }
 .critique:hover {
 	color: #f60;
-}
-@font-face {
-	font-family: kinopoisk; /* Гарнитура шрифта */
-	src: url('fonts/kinopoisk.ttf'); /* Путь к файлу со шрифтом */
 }
 .imdb-points {
 	height: 480px;
@@ -362,7 +398,7 @@ button {
 	margin-top: 5px;
 }
 .social-network li {
-	margin-right: 15px;
+	margin-right: 10px;
 	display: block;
 }
 .social-network {
@@ -572,26 +608,20 @@ button {
 	width: 224px;
 	cursor: pointer;
 }
-.poster-review span {
-	text-align: center;
-	color: #fff;
-	transition: color 0.1s ease-in-out;
-	cursor: pointer;
-}
-.poster-review span:hover {
-	color: #ff6600;
-}
 .poster-review .video-review img {
 	display: block;
 	margin: 0 auto;
-	width: 250px;
-	height: 160px;
+	width: 300px;
+	height: 192px;
 	outline: none;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	cursor: pointer;
 	border-radius: 10px;
 	object-fit: cover;
+}
+.poster-review .video-review img:hover + .date_trailer {
+	color: #ff6600;
 }
 .trailer_1 {
 	position: absolute;
@@ -605,12 +635,15 @@ button {
 	display: inline-flex;
 	align-items: center;
 	width: auto;
-	padding: 9px 15px;
+	padding: 11px 20px;
 	font-family: Graphik Kinopoisk LC Web, Arial, Tahoma, Verdana, sans-serif;
 	font-size: 13px;
 	font-weight: 500;
 	cursor: pointer;
 	color: #fff;
+	left: 66%;
+	bottom: 105px;
+	position: relative;
 	border: 0;
 	border-radius: 24px;
 	background-color: #f60;
@@ -628,13 +661,23 @@ button {
 	border-left-color: #fff;
 	position: relative;
 }
+.button_trailer:hover + .date_trailer {
+	color: #ff6600;
+}
+.time_trailer:hover + .date_trailer {
+	color: #ff6600;
+}
 .time_trailer {
 	padding: 2px 4px;
 	font-size: 12px;
 	color: hsla(0, 0%, 100%, 0.9);
 	border-radius: 4px;
 	background-color: rgba(34, 34, 34, 0.9);
-	font-family: Graphik Kinopoisk LC Web, Arial, Tahoma, Verdana, sans-serif;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	position: relative;
+	bottom: 108px;
+	left: 158%;
+	cursor: pointer;
 }
 .modal-name {
 	text-align: center;
