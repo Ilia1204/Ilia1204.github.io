@@ -1,0 +1,29 @@
+body {
+	background-color: #f7f7ff;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled),
+button:not(:disabled) {
+	cursor: pointer;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
