@@ -1,0 +1,47 @@
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 45px;
+	}
+	.poster img {
+		width: 410px;
+		height: 700px;
+	}
+}
+@media screen and (max-width: 750px) {
+	h1 {
+		font-size: 40px;
+	}
+	.poster img {
+		width: 370px;
+		height: 600px;
+	}
+}
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 35px;
+	}
+	.poster img {
+		width: 300px;
+		height: 500px;
+	}
+}
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.poster img {
+		width: 300px;
+		height: 500px;
+	}
+}
+@media screen and (max-width: 350px) {
+	h1 {
+		font-size: 27px;
+	}
+	.poster img {
+		width: 250px;
+		height: 400px;
+	}
+}
