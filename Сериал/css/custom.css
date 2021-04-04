@@ -49,17 +49,18 @@ h1:hover {
 	height: 800px;
 	display: block;
 	margin: 0 auto;
+	border-radius: 3px;
 }
 .soundtrack {
 	position: absolute;
-	right: 40px;
-	bottom: 132px;
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: 13px;
 	width: 32px;
 	height: 32px;
 	font-size: 0;
+	left: 65%;
+	bottom: -47%;
 	cursor: pointer;
 	border: 0;
 	transition: 0.3s;
@@ -251,8 +252,6 @@ button {
 	align-items: center;
 	margin-bottom: 16px;
 	margin-left: 40px;
-}
-.title {
 	width: 777px;
 }
 .title div:nth-child(1) h2 span {
@@ -316,6 +315,7 @@ button {
 .tags {
 	display: inline-block;
 	color: #ffffff99;
+	width: 156px;
 }
 .tags_10 {
 	display: inline-block;
@@ -335,16 +335,15 @@ button {
 	margin-left: 19px;
 }
 .suggest_films {
-	width: 173px;
-	height: 18px;
-	font-family: inherit;
-	font-size: 16px;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	font-size: 15px;
 	line-height: 1.29;
 	color: #fff;
 }
 .button_films {
 	overflow: visible;
 	width: auto;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
 	margin: 0 0 0 8px;
 	padding: 5px 10px 8px 8px;
 	font: inherit;
@@ -378,6 +377,9 @@ button {
 	cursor: pointer;
 }
 .link:hover {
+	color: #f60;
+}
+.cards img:hover + link {
 	color: #f60;
 }
 .main-roles {
@@ -526,6 +528,7 @@ button {
 	width: 220px;
 	height: 330px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 .facts li {
 	color: red;
@@ -555,6 +558,14 @@ button {
 	font-size: 32px;
 	font-weight: 600;
 	margin-bottom: 7px;
+	margin-left: 19px;
+}
+.facts-name_2 {
+	color: #fff;
+	cursor: pointer;
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 7px;
 	margin: 0 0 8px;
 }
 .under-name {
@@ -567,7 +578,7 @@ button {
 	margin-top: 15px;
 }
 .facts-name-h2 {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 .modal {
 	display: none;

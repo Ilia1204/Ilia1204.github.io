@@ -12,6 +12,10 @@
 	.time_trailer {
 		left: 128%;
 	}
+	.soundtrack {
+		left: 70%;
+		bottom: -30%;
+	}
 }
 @media screen and (max-width: 750px) {
 	h1 {
@@ -26,6 +30,10 @@
 	}
 	.time_trailer {
 		left: 113%;
+	}
+	.soundtrack {
+		left: 69%;
+		bottom: -13%;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -46,13 +54,59 @@
 		width: 275px;
 		height: 167px;
 	}
+	.soundtrack {
+		left: 65%;
+		bottom: 4%;
+	}
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	h1 {
 		font-size: 30px;
 	}
 	.facts-name {
 		font-size: 30px;
+	}
+	.cards {
+		display: block;
+		column-count: 1 !important;
+		margin: 0 auto;
+	}
+	.cards .card:nth-child(1),
+	.card:nth-child(2),
+	.card:nth-child(3) {
+		margin-bottom: 30px;
+	}
+	.title {
+		display: block;
+	}
+	.rate_series {
+		margin-top: 45px;
+		margin-left: 0px !important;
+		margin-bottom: 40px;
+	}
+	.information {
+		display: block;
+	}
+	.information div:nth-child(1) {
+		margin-left: -40px;
+	}
+	.information div:nth-child(2) img {
+		margin: 0px;
+		margin-left: 20px;
+	}
+	.actors li {
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ffffff1a;
+	}
+	.ab_act {
+		margin-left: -40px !important;
+	}
+	.h2_ab_act {
+		margin-top: 40px;
+	}
+	.soundtrack {
+		left: 68%;
+		bottom: 5%;
 	}
 }
 @media screen and (max-width: 540px) {
@@ -69,11 +123,26 @@
 	.facts-name {
 		font-size: 21px;
 	}
+	.soundtrack {
+		left: 75%;
+		bottom: 5%;
+	}
+	.title div:nth-child(1) h2 span {
+		font-size: 33px;
+		color: #fff;
+	}
 }
 @media screen and (max-width: 450px) {
 	.poster img {
 		width: 300px;
 		height: 500px;
+	}
+	.facts-name {
+		margin-left: 0px;
+	}
+	.soundtrack {
+		left: 74%;
+		bottom: 5%;
 	}
 }
 @media screen and (max-width: 350px) {
@@ -93,5 +162,45 @@
 	}
 	.time_trailer {
 		left: 58%;
+	}
+	.similar_films {
+		margin-left: 0px;
+	}
+	.soundtrack {
+		left: 73%;
+		bottom: 23%;
+	}
+	.title div:nth-child(1) h2 span {
+		font-size: 30px;
+		color: #fff;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.button_films {
+		margin: 0 0 0 0px;
+	}
+}
+@media only screen and (max-width: 860px) {
+	.title {
+		width: auto;
+	}
+	.rate_series {
+		margin-left: 55px;
+		margin-right: 15px;
+	}
+}
+@media only screen and (max-width: 995px) {
+	.cards {
+		display: block;
+		column-count: 2;
+		margin: 0 auto;
+	}
+	.cards .card:nth-child(3),
+	.cards .card:nth-child(4) {
+		margin-right: 0px;
+	}
+	.cards .card:nth-child(1),
+	.cards .card:nth-child(3) {
+		margin-bottom: 30px;
 	}
 }
