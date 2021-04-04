@@ -118,12 +118,6 @@
 	.information div:nth-child(1) {
 		width: auto;
 	}
-	.actors {
-		display: none;
-	}
-	.h2_ab_act {
-		background-image: url('../img/facebook.png');
-	}
 }
 @media screen and (max-width: 540px) {
 	.facts-name {
