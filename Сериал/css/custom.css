@@ -80,11 +80,16 @@ h1:hover {
 	color: #fff;
 	border: 0;
 	border-radius: 4px;
-	background-color: #f60;
-	transition: 0.5s ease-in-out;
+	background: linear-gradient(
+		130.16deg,
+		#505add 34.4%,
+		#be40c0 66.11%,
+		#fba82b 96.37%
+	);
 }
 .button:hover {
 	background-color: #e45c01;
+	padding: 13px 34px;
 }
 .button:before {
 	display: inline-block;
@@ -382,9 +387,27 @@ button {
 .cards img:hover + link {
 	color: #f60;
 }
+.rating_card {
+	position: absolute;
+	z-index: 1;
+	background-color: #3bb33b;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 32px;
+	padding: 3px 7px;
+	font-family: Graphik Kinopoisk LC Web, Arial, Tahoma, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 13px;
+	text-align: center;
+	color: #fff;
+	border-radius: 2px;
+}
 .main-roles {
 	color: #fff;
 }
+
 .actors li {
 	margin-bottom: 7px;
 }
@@ -657,7 +680,12 @@ button {
 	position: relative;
 	border: 0;
 	border-radius: 24px;
-	background-color: #f60;
+	background: linear-gradient(
+		130.16deg,
+		#505add 34.4%,
+		#be40c0 66.11%,
+		#fba82b 96.37%
+	);
 }
 .button_trailer:before {
 	display: inline-block;
@@ -690,80 +718,8 @@ button {
 	left: 158%;
 	cursor: pointer;
 }
-.modal-name {
-	text-align: center;
-}
-.viewport {
-	width: 100%;
-	height: 450px;
-	overflow: hidden;
-}
-
-.slider {
-	position: relative;
-	width: 500%;
-	height: 450px;
-	display: flex;
-	justify-content: start;
-	padding: 0;
-}
-
-.slide {
-	width: 100%;
-	height: 450px;
-}
-
-.slide img {
-	object-fit: cover;
-}
-
-.dots {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 16px;
-}
-
-.dot {
-	width: 10px;
-	height: 10px;
-	margin-right: 8px;
-	background: #fff;
-	border-radius: 50%;
-	transition: 0.3s opacity ease-in-out;
-}
-
-.active {
-	background: green;
-}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-.scroll-off {
-	position: fixed;
-	left: 30px;
-	top: 30px;
-	cursor: pointer;
-}
-
-.scroll-on {
-	position: fixed;
-	left: 30px;
-	top: 80px;
-	pointer-events: none;
-	cursor: default;
-	width: 223px;
-}
-
-.disable-scroll {
-	position: relative;
-	overflow: hidden;
-	height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
 }
