@@ -108,6 +108,13 @@
 		left: 68%;
 		bottom: 5%;
 	}
+	.div_facts {
+		padding-left: 0px !important;
+	}
+	.facts-name_2 {
+		display: block;
+		text-align: center;
+	}
 }
 @media screen and (max-width: 540px) {
 	.facts-name {
@@ -183,6 +190,7 @@
 @media only screen and (max-width: 860px) {
 	.title {
 		width: auto;
+		margin-left: 0px;
 	}
 	.rate_series {
 		margin-left: 55px;
