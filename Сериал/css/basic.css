@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+html {
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	background-image: linear-gradient(180deg, #000 724px, #232323 99%);
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+::-webkit-scrollbar-button {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	background: linear-gradient(
+		130.16deg,
+		#505add 34.4%,
+		#be40c0 66.11%,
+		#fba82b 96.37%
+	);
+}
+::-webkit-scrollbar-corner {
+	background-repeat: no-repeat;
+}
+
+::-webkit-resizer {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	height: 6px;
+}
+::selection {
+	background: #fba82b 96.37%;
+}
