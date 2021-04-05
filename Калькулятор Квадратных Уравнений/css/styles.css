@@ -3,13 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.block {
+.container {
 	max-width: 352px;
 	padding: 20px;
 }
 .col {
 	display: inline-block;
-	width: 75px;
+	width: 190px;
 	height: 75px;
 	background-color: #f1f1f1;
 	color: #000;
@@ -26,7 +26,7 @@
 	background-color: #d0d0d0;
 	cursor: pointer;
 }
-.block > input {
+.container input {
 	font-size: 16px;
 	padding: 10px 7px;
 	margin: 5px;
@@ -35,7 +35,7 @@
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 	border: none;
 }
-.block > input[type='text'] {
+.container input[type='text'] {
 	width: 97%;
 	background-color: #fff;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
