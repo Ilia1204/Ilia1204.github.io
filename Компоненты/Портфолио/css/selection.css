@@ -1,0 +1,14 @@
+.side_bar h1::selection,
+.side_bar .span_web::selection,
+.li_side_bar a::selection,
+h1::selection,
+p::selection,
+a::selection {
+	background-color: #ff4f4f;
+}
+.side_bar .copyright::selection {
+	background-color: #c85c83;
+}
+.main_img::selection {
+	background-color: #c32551;
+}

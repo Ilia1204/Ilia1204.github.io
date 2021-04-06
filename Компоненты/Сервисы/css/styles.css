@@ -1,0 +1,481 @@
+.elementor-99
+	.elementor-element.elementor-element-7345eaa7:not(.elementor-motion-effects-element-type-background),
+.elementor-99
+	.elementor-element.elementor-element-7345eaa7
+	> .elementor-motion-effects-container
+	> .elementor-motion-effects-layer {
+	background-color: #ffffff;
+}
+.elementor-99 .elementor-element.elementor-element-7345eaa7 {
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	padding: 65px 30px 60px 30px;
+}
+.elementor-99 .elementor-element.elementor-element-7345eaa7,
+.elementor-99
+	.elementor-element.elementor-element-7345eaa7
+	> .elementor-background-overlay {
+	border-radius: 20px 20px 20px 20px;
+}
+.elementor-section {
+	position: relative;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.shadow-blue {
+	-webkit-box-shadow: 0px 6px 15px 0px rgb(74 99 231 / 10%);
+	-moz-box-shadow: 0px 6px 15px 0px rgba(74, 99, 231, 0.1);
+	box-shadow: 0px 6px 15px 0px rgb(74 99 231 / 10%);
+}
+section {
+	position: relative;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+	max-width: 1140px;
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+	max-width: 1140px;
+}
+.elementor-section .elementor-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@media (min-width: 768px) {
+	.elementor-column.elementor-col-100,
+	.elementor-column[data-col='100'] {
+		width: 100%;
+	}
+}
+.elementor-column,
+.elementor-column-wrap {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.elementor-column {
+	min-height: 1px;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.elementor-column-gap-default
+	> .elementor-column
+	> .elementor-element-populated {
+	padding: 10px;
+}
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.elementor-widget-wrap {
+	position: relative;
+	width: 100%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+}
+.elementor-widget:not(:last-child) {
+	margin-bottom: 20px;
+}
+.elementor-widget:not(:last-child) {
+	margin-bottom: 20px;
+}
+.elementor-widget-wrap > .elementor-element {
+	width: 100%;
+}
+.elementor-widget:not(:last-child) {
+	margin-bottom: 0 !important;
+}
+.elementor-widget {
+	position: relative;
+}
+.elementor-element .elementor-widget-container {
+	-webkit-transition: background 0.3s, border 0.3s, -webkit-border-radius 0.3s,
+		-webkit-box-shadow 0.3s;
+	transition: background 0.3s, border 0.3s, -webkit-border-radius 0.3s,
+		-webkit-box-shadow 0.3s;
+	-o-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+		box-shadow 0.3s;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+		-webkit-border-radius 0.3s, -webkit-box-shadow 0.3s;
+}
+.elementor-99
+	.elementor-element.elementor-element-4eb86cec
+	.elementor-spacer-inner {
+	height: 70px;
+}
+.elementor-widget-wrap > .elementor-element {
+	width: 100%;
+}
+.elementor-section {
+	position: relative;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section {
+	position: relative;
+}
+@media (max-width: 1024px) {
+	.elementor-section .elementor-container {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+}
+.elementor-section .elementor-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@media (max-width: 767px) {
+	.elementor-column {
+		width: 100%;
+	}
+}
+.elementor-column,
+.elementor-column-wrap {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.elementor-column {
+	min-height: 1px;
+}
+.elementor-widget-wrap {
+	position: relative;
+	width: 100%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+}
+.elementor-widget-wrap > .elementor-element {
+	width: 100%;
+}
+.service-item {
+	border: solid 1px #efefef;
+	border-radius: 10px;
+	padding: 30px 20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.text-center {
+	text-align: center !important;
+}
+.service-item h4,
+.service-item i {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.icon-simple {
+	color: #ff5959;
+	font-size: 24px;
+}
+.icon-user,
+.icon-people,
+.icon-user-female,
+.icon-user-follow,
+.icon-user-following,
+.icon-user-unfollow,
+.icon-login,
+.icon-logout,
+.icon-emotsmile,
+.icon-phone,
+.icon-call-end,
+.icon-call-in,
+.icon-call-out,
+.icon-map,
+.icon-location-pin,
+.icon-direction,
+.icon-directions,
+.icon-compass,
+.icon-layers,
+.icon-menu,
+.icon-list,
+.icon-options-vertical,
+.icon-options,
+.icon-arrow-down,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-arrow-up,
+.icon-arrow-up-circle,
+.icon-arrow-left-circle,
+.icon-arrow-right-circle,
+.icon-arrow-down-circle,
+.icon-check,
+.icon-clock,
+.icon-plus,
+.icon-minus,
+.icon-close,
+.icon-event,
+.icon-exclamation,
+.icon-organization,
+.icon-trophy,
+.icon-screen-smartphone,
+.icon-screen-desktop,
+.icon-plane,
+.icon-notebook,
+.icon-mustache,
+.icon-mouse,
+.icon-magnet,
+.icon-energy,
+.icon-disc,
+.icon-cursor,
+.icon-cursor-move,
+.icon-crop,
+.icon-chemistry,
+.icon-speedometer,
+.icon-shield,
+.icon-screen-tablet,
+.icon-magic-wand,
+.icon-hourglass,
+.icon-graduation,
+.icon-ghost,
+.icon-game-controller,
+.icon-fire,
+.icon-eyeglass,
+.icon-envelope-open,
+.icon-envelope-letter,
+.icon-bell,
+.icon-badge,
+.icon-anchor,
+.icon-wallet,
+.icon-vector,
+.icon-speech,
+.icon-puzzle,
+.icon-printer,
+.icon-present,
+.icon-playlist,
+.icon-pin,
+.icon-picture,
+.icon-handbag,
+.icon-globe-alt,
+.icon-globe,
+.icon-folder-alt,
+.icon-folder,
+.icon-film,
+.icon-feed,
+.icon-drop,
+.icon-drawer,
+.icon-docs,
+.icon-doc,
+.icon-diamond,
+.icon-cup,
+.icon-calculator,
+.icon-bubbles,
+.icon-briefcase,
+.icon-book-open,
+.icon-basket-loaded,
+.icon-basket,
+.icon-bag,
+.icon-action-undo,
+.icon-action-redo,
+.icon-wrench,
+.icon-umbrella,
+.icon-trash,
+.icon-tag,
+.icon-support,
+.icon-frame,
+.icon-size-fullscreen,
+.icon-size-actual,
+.icon-shuffle,
+.icon-share-alt,
+.icon-share,
+.icon-rocket,
+.icon-question,
+.icon-pie-chart,
+.icon-pencil,
+.icon-note,
+.icon-loop,
+.icon-home,
+.icon-grid,
+.icon-graph,
+.icon-microphone,
+.icon-music-tone-alt,
+.icon-music-tone,
+.icon-earphones-alt,
+.icon-earphones,
+.icon-equalizer,
+.icon-like,
+.icon-dislike,
+.icon-control-start,
+.icon-control-rewind,
+.icon-control-play,
+.icon-control-pause,
+.icon-control-forward,
+.icon-control-end,
+.icon-volume-1,
+.icon-volume-2,
+.icon-volume-off,
+.icon-calendar,
+.icon-bulb,
+.icon-chart,
+.icon-ban,
+.icon-bubble,
+.icon-camrecorder,
+.icon-camera,
+.icon-cloud-download,
+.icon-cloud-upload,
+.icon-envelope,
+.icon-eye,
+.icon-flag,
+.icon-heart,
+.icon-info,
+.icon-key,
+.icon-link,
+.icon-lock,
+.icon-lock-open,
+.icon-magnifier,
+.icon-magnifier-add,
+.icon-magnifier-remove,
+.icon-paper-clip,
+.icon-paper-plane,
+.icon-power,
+.icon-refresh,
+.icon-reload,
+.icon-settings,
+.icon-star,
+.icon-symbol-female,
+.icon-symbol-male,
+.icon-target,
+.icon-credit-card,
+.icon-paypal,
+.icon-social-tumblr,
+.icon-social-twitter,
+.icon-social-facebook,
+.icon-social-instagram,
+.icon-social-linkedin,
+.icon-social-pinterest,
+.icon-social-github,
+.icon-social-google,
+.icon-social-reddit,
+.icon-social-skype,
+.icon-social-dribbble,
+.icon-social-behance,
+.icon-social-foursqare,
+.icon-social-soundcloud,
+.icon-social-spotify,
+.icon-social-stumbleupon,
+.icon-social-youtube,
+.icon-social-dropbox,
+.icon-social-vkontakte,
+.icon-social-steam {
+	font-family: 'simple-line-icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-globe:before {
+	content: '\e037';
+}
+.service-item h4,
+.service-item i {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+h4 {
+	font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin: 20px 0;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.mt-3,
+.my-3 {
+	margin-top: 1rem !important;
+}
+p {
+	margin-top: 0;
+	-bottom: 1rem;
+}
+.section-title:after {
+	content: '';
+	background: #ff5959;
+	border-radius: 25px;
+	display: block;
+	height: 5px;
+	margin-top: 14px;
+	width: 30px;
+}
