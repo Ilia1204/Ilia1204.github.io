@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+.container a {
+	margin-bottom: 5px;
+	padding: 5px 30px;
+	color: rgb(32, 32, 243);
+	text-decoration: none;
+	width: 30%;
+}
+.container a:hover {
+	text-decoration: underline;
+}
