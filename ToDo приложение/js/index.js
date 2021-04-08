@@ -1,18 +1,36 @@
 $(function () {
-	let div = $('div')
+	let ul = $('ul')
 	let titleElem = $('.name')
-	$('.add_tasks').click(function addTask(titleElem) {
+	let input = $('.input_name')
+	$('.add_tasks').click(function addTask(title) {
 		// подставляем данные которые пришли с формы
 		let task = `
-      <div class="todo-item">
-				<input type="checkbox" class="checkbox">
-				<span class="name task-1">${title}</span>
-			</div>	
-        `
-		// добавляем нашу задачку и скрываем p, в котором находился текст 'Список пуст...'
-		div.append(task)
+			<li>
+				<input type="checkbox">
+				<span>${title}</span>	
+    	</li>    
+			`
+		// добавляем нашу задачку
+		ul.append(task)
+		document.getElementById('input_name').value = document.getElementById(
+			'input_name'
+		).defaultValue
 	})
-	$('.checkbox').click(
+
+	input.submit(function (event) {
+		// делаем так чтобы форма не отправляла данные
+		event.preventDefault()
+
+		// собираем данные с полей
+		const title = titleElem.val()
+
+		// приводим форму к первоночальному виду
+
+		// вызываем нашу написанную функцию и отправляем ей данные взятые из формы
+		addTask(title)
+	})
+
+	$('.item-1').click(
 		function () {
 			$('.task-1').attr('style', 'text-decoration: none;')
 		},
@@ -20,7 +38,19 @@ $(function () {
 			$('.task-1').attr('style', 'text-decoration: line-through;')
 		}
 	)
-	$('.checkbox-2').click(
+	$('.todo-item').click(function () {
+		$(this).find(':checkbox').attr('checked', 'checked')
+	})
+
+	$('li').click(
+		function () {
+			$('.task-1').attr('style', 'text-decoration: none;')
+		},
+		function () {
+			$('.task-1').attr('style', 'text-decoration: line-through;')
+		}
+	)
+	$('.item-2').click(
 		function () {
 			$('.task-2').attr('style', 'text-decoration: none;')
 		},
@@ -28,4 +58,10 @@ $(function () {
 			$('.task-2').attr('style', 'text-decoration: line-through;')
 		}
 	)
+
+	$('.delete_tasks').click(function () {
+		// написать удаление при нажатие на кнопку delete
+		let li = 'li'
+		$(li).remove()
+	})
 })
