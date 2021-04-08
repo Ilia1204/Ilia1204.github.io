@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Hello World</title>
+	<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+	<!-- Don't use this in production: -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="root"></div>
+	<script type="text/babel">
+		
+		function formatUser(user) {
+			return user.FirstName + user.SecondName 
+		}
+		
+		function func(user) {
+			if(user) {
+				return <h1>Добрый день {formatUser(user2)}!</h1>
+			}
+			return false;
+		}
+		
+		const user2 = {
+			FirstName: 'Полина',
+			SecondName: 'Петрова'
+		}
+		const user = {
+			FirstName: 'Илья',
+			SecondName: ' Петров'
+		};
+		
+		const element2 = (
+				<h1>
+					Здравствуйте, {formatUser(user)}!			
+				</h1>
+		);
+		
+		const name = 'Полина';
+		const element = (
+		<h1>
+			Здравствуй, {name}!
+		</h1>
+		);
+		ReactDOM.render(
+			element2,
+			document.getElementById('root')
+		);
+	</script>
+</body>
+</html>
