@@ -23,9 +23,6 @@ input[type='text'] {
 input[type='checkbox'] {
 	cursor: pointer;
 }
-input[type='checkbox']:checked + .todo-item {
-	text-decoration: line-through;
-}
 .todo-item {
 	display: flex;
 	flex-direction: row;
@@ -42,23 +39,6 @@ input[type='checkbox']:checked + .todo-item {
 	font-size: 18px;
 	margin-left: 10px;
 	color: #222222;
-}
-.btns {
-	display: flex;
-	flex-direction: row;
-}
-.add_tasks {
-	border-radius: 20px;
-	padding: 10px 35px;
-	border: none;
-	margin-right: 10px;
-	outline: none;
-	background-color: #fff;
-	cursor: pointer;
-	box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
-	font-size: 16px;
-	color: #757575;
-	transition: all 0.5s ease;
 }
 .delete_tasks {
 	border-radius: 20px;
@@ -78,11 +58,6 @@ input[type='checkbox']:checked + .todo-item {
 	color: #3d3d3d;
 	background-color: #ff0000;
 }
-.add_tasks:hover {
-	opacity: 1;
-	color: #3d3d3d;
-	background-color: #13e780;
-}
 ul {
 	padding: 0;
 	margin: 0;
@@ -101,4 +76,12 @@ li {
 }
 li:nth-child(1) {
 	margin: 0 auto;
+}
+.tdItem {
+	font-size: 18px;
+	color: #222222;
+	transition: all 0.5s ease;
+}
+.tdItem:hover {
+	background-color: #ff0000;
 }

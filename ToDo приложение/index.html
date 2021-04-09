@@ -4,30 +4,35 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ToDo Приложение</title>
+	<title>ToDo приложение</title>
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<main>
-		<h1>ToDo Приложение</h1>
+		<h1>ToDo приложение</h1>
 		<div>
-			<div class="todo-item item-1" onclick="document.getElementsByClassName('.checkbox').checked = 'checked'">
+			<div class="todo-item">
 				<input type="checkbox" class="checkbox">
-				<span class="name task-1">Купить хлеб</span>
+				<span class="name">Купить хлеб</span>
 			</div>
-			<div class="todo-item item-2">
-				<input type="checkbox" class="checkbox-2">
-				<span class="name task-2">Купить Молоко</span>
+			<div class="todo-item">
+				<input type="checkbox">
+				<span class="name">Купить Молоко</span>
 			</div>
 			
-			<ul>
-				
-			</ul>
-			<input type="text" placeholder="Название" class="input_name" id="input_name"   required>
-			<div class="btns">
-				<button class="add_tasks">Добавить</button>
-				<button class="delete_tasks" onclick="deleteTasks();">Удалить все</button>
+			<!--Здесь будут будущие задачи-->
+			<div id="ToDoApp">
+				<ul>
+				</ul>
 			</div>
+			
+			<input type="text" placeholder="Название" class="input_name" id="input_name" required>
+			<span style="text-align: center;
+    				font-size: 15px;
+    				margin-bottom: 10px;">
+			    *Нажмите enter, чтобы добавить
+			</span>	
+				<button class="delete_tasks">Удалить все</button>
 		</div>
 	</main>
 	<script src="./js/jquery-3.5.1.min.js"></script>
