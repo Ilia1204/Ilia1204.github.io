@@ -1,0 +1,114 @@
+body 
+        {
+            background-color: grey; /* Цвет фона веб-страницы */
+        } 
+        h1  
+        {
+            text-align: center; /*Положение текста*/
+            border: 10px solid white; /* Параметры рамки */
+            padding: 14px; /* Поля вокруг текста */
+            margin-bottom: 11px; /* Отступ снизу */
+            font-family: clarendon, 'Comic Sans MS', cursive;
+            font-size: 500%; /*размер шрифта*/
+            border-radius: 30px; /* Радиус скругления */
+            position: relative;
+            top: -70px;
+        }
+        h2 {
+            text-align: left; /*Положение текста*/
+            color: black; /*Цвет текста*/
+            font-size: 100%; /*Размер шрифта*/
+            font-family: clarendon, 'Comic Sans MS', cursive;
+            text-shadow: black 0 0 2px; /*Тень текста*/
+        }
+        img 
+        {
+            display: block; /*Размещение картинки*/
+            margin: 0 auto; /*Величину отступа от каждого края*/
+        }
+        .round 
+        {
+            border-radius: 30px; /* Радиус скругления */
+            border: 3px solid black; /* Параметры рамки */
+            box-shadow: 0 0 7px #666; /* Параметры тени */
+        }
+        .group-item 
+        {
+            font-size: 30px; /*Размер шрифта*/
+            color:black; /*Цвет текста*/
+            text-align: center; /*Положение текста*/
+            margin-top: 0,5%; /*Величину отступа от верхнего края */
+        }
+        .group-item2 
+        {
+            font-size: 60px; /*Размер шрифта*/
+            color: black; /*Цвет текста*/
+            text-align: center; /*Положение текста*/
+            margin-top: 2%; /*Величину отступа от верхнего края */
+            font-family: clarendon, 'Comic Sans MS', cursive; /*Задаёт сам шрифт текста*/
+            text-shadow: black 0 0 2px; /*Тень текста*/
+        }
+        .group-item1 
+        {
+            font-size: 60px; /*Размер шрифта*/
+            color: orange; /*Цвет текста*/
+            text-align: center; /*Положение текста*/
+            margin-top: 2%; /*Величину отступа от верхнего края */
+            font-family: clarendon, 'Comic Sans MS', cursive; /*Задаёт сам шрифт текста*/
+            text-shadow: black 0 0 100 px; /*Тень текста*/
+        }
+        .group-item3 
+        {
+            font-size: 60px;/*Размер шрифта*/
+            color: blue; /*Цвет текста*/
+            text-align: center;/*Положение текста*/
+            margin-top: 2%; /*Величину отступа от верхнего края */
+            font-family: clarendon, 'Comic Sans MS', cursive; /*Задаёт сам шрифт текста*/
+            text-shadow: black 0 0 310px; /*Тень текста*/
+        }
+        .group-item4 
+        {
+            font-size: 60px; /*Размер шрифта*/
+            color:black; /*Цвет текста*/
+            text-align: center;/*Положение текста*/
+            margin-top: 0,5%; /*Величину отступа от верхнего края */
+        }
+        @font-face 
+        {
+            font-family: clarendon; /*Гарнитура шрифта */
+            src: url(clarendon.ttf); /* Путь к файлу со шрифтом */
+        }
+        a 
+        {
+            font-family: clarendon, 'Comic Sans MS', cursive;  /*Задаёт сам шрифт текста*/
+            color: black; /*Цвет текста*/
+            border: 5px solid white; /* Параметры рамки */
+            padding: 10px; /* Поля вокруг текста */
+            border-radius: 30px; /* Радиус скругления */
+            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+        .text 
+        {
+            text-align:  center;/*Положение текста*/
+            color: white; /*Цвет текста*/
+            font-size: 300%; /*Размер шрифта*/
+            font-family: clarendon, 'Comic Sans MS', cursive; /*Задаёт сам шрифт текста*/
+        }
+        .text-item 
+        {
+            text-align: left; /*Положение текста*/
+            color: black; /*Цвет текста*/
+            font-size: 100%; /*Размер шрифта*/
+            font-family: clarendon, 'Comic Sans MS', cursive; /*Задаёт сам шрифт текста*/
+            text-shadow: black 0 0 2px; /*Тень текста*/
+        }
+        a:hover 
+        {
+            color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+            text-decoration: underline; /* Добавляем подчеркивание */
+            cursor: pointer;
+        }
+        li{
+            color: black;
+        }
+ 
