@@ -1,6 +1,5 @@
 let List = $('#ToDoApp ul')
 let Mask = 'tdl_'
-
 function showTasks() {
 	//	Узнаём размер хранилища
 	let Storage_size = localStorage.length
@@ -11,7 +10,7 @@ function showTasks() {
 			let key = localStorage.key(i)
 			if (key.indexOf(Mask) == 0) {
 				//	и делаем это элементами списка
-				$('<li title="Нажмите, чтобы удалить"></li>')
+				$(`<li title="Нажмите, чтобы удалить"></li>`)
 					.addClass('tdItem')
 					.attr('data-itemid', key)
 					.text(localStorage.getItem(key))
@@ -21,7 +20,6 @@ function showTasks() {
 	}
 }
 showTasks()
-
 $('#input_name').on('keydown', function (e) {
 	if (e.keyCode != 13) return
 	let str = e.target.value
@@ -37,14 +35,13 @@ $('#input_name').on('keydown', function (e) {
 		// Отправляем новую задачу сразу в память
 		localStorage.setItem(Mask + number_Id, str)
 		// и добавляем её в конец списка
-		$('<li title="Нажмите, чтобы удалить"></li>')
+		$(`<li title="Нажмите, чтобы удалить"></li>`)
 			.addClass('tdItem')
 			.attr('data-itemid', Mask + number_Id)
 			.text(str)
 			.appendTo(List)
 	}
 })
-
 $(document).on('click', '.tdItem', function (event) {
 	// Находим задачу, по которой кликнули
 	let note = $(event.target)
@@ -53,7 +50,6 @@ $(document).on('click', '.tdItem', function (event) {
 	// и убираем её из списка
 	note.remove()
 })
-
 $('.delete_tasks').click(function () {
 	const allNotes = $('.tdItem')
 	$(allNotes).remove()
