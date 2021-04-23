@@ -1,0 +1,95 @@
+.right_max_side {
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 60%;
+}
+.photo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 23px;
+}
+.avatar_pre {
+	margin-right: 30px;
+}
+.right_photo > label {
+	font-size: 16px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+}
+.right_photo > label:last-child > p {
+	margin-right: 10px;
+	text-align: left;
+}
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='text'],
+textarea {
+	border-radius: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	padding: 8px 20px;
+	margin-left: 15px;
+	width: 100%;
+	display: inline-block;
+	-webkit-appearance: none;
+	outline: none;
+	background-color: #13e782;
+	transition: border 0.4s ease-in-out;
+	border: 1px solid transparent;
+}
+.main_settings {
+	border-top: 1px solid #4c8da4;
+	border-bottom: 1px solid #4c8da4;
+}
+.left_settings {
+	padding: 50px;
+}
+.left_settings > h2 {
+	margin-bottom: 30px;
+}
+.inputs > label {
+	font-size: 16px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+}
+.inputs > label > p {
+	width: 90px;
+	display: block;
+	text-align: left;
+	font-size: 18px;
+}
+.inputs > label input {
+	width: calc(100% - 105px);
+}
+::placeholder {
+	color: #fff;
+}
+.inputs > label.text_label {
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+.inputs > label.text_label textarea {
+	display: block;
+	width: 100%;
+	height: 150px;
+	resize: none;
+	margin-top: 15px;
+	margin-left: 0;
+	padding: 15px 20px;
+}
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='text']:focus,
+select:focus,
+textarea:focus {
+	border-color: #13e780;
+}

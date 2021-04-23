@@ -38,6 +38,21 @@
 		margin-top: 17px;
 	}
 }
+@media only screen and (max-width: 400px) {
+	.inputs > label input {
+		width: -webkit-fill-available !important;
+	}
+	.inputs > label {
+		display: block !important;
+	}
+	input[type='email'],
+	input[type='number'],
+	input[type='password'],
+	input[type='text'],
+	textarea {
+		margin-left: 0px !important;
+	}
+}
 @media only screen and (max-width: 330px) {
 	.subtitle > span > a {
 		font-size: 22px;
@@ -57,7 +72,25 @@
 	.main_services > li {
 		margin: 20px 0 auto;
 	}
+	.avatar_pre {
+		margin-right: auto !important;
+		margin-left: auto !important;
+		display: block !important;
+		margin-bottom: 15px !important;
+	}
+	.right_max_side {
+		margin-top: 50px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.photo {
+		display: block !important;
+	}
+	.right_max_side {
+		width: 100% !important;
+	}
 }
+
 @media only screen and (max-width: 440px) {
 	.subtitle > h2 {
 		display: none;
