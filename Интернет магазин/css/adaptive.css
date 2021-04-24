@@ -32,10 +32,32 @@
 		margin-top: 15px;
 	}
 }
+@media only screen and (max-width: 630px) {
+	.main_settings > .row {
+		display: block !important;
+	}
+	.col {
+		max-width: 100% !important;
+	}
+	.main_settings > .row > div:first-child {
+		border-right: 1px solid transparent !important;
+	}
+	.main_settings > .row > div {
+		border-top: 1px solid #4c8da4 !important;
+	}
+}
 @media only screen and (max-width: 420px) {
 	.subtitle > h2 {
 		font-size: 24px;
 		margin-top: 17px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.input_change > label {
+		display: block !important;
+	}
+	.input_change > label > input {
+		margin-left: 0px;
 	}
 }
 @media only screen and (max-width: 400px) {
@@ -61,7 +83,7 @@
 		margin-top: 18px;
 	}
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1010px) {
 	.container {
 		display: flex;
 		flex-direction: column;
