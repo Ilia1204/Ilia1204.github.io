@@ -1,0 +1,33 @@
+.contacts {
+	margin: auto;
+}
+.contacts .title {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #7f8c8c;
+	text-align: center;
+}
+.contacts .item {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+.contacts .icon {
+	position: absolute;
+	left: 0;
+	width: 22px;
+	height: 32px;
+}
+.contacts .icon-location {
+	background-position: 0 0;
+}
+.contacts .icon-email {
+	background-position: -60px 0;
+}
+.contacts a {
+	color: #e2534b;
+}
+.contacts a:hover {
+	text-decoration: underline;
+}
