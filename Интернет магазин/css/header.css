@@ -145,7 +145,7 @@ header {
 	background-color: #000;
 	display: block;
 	margin: 6px auto;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.55s ease-in-out;
 	border-radius: 5px;
 }
 .first_line {

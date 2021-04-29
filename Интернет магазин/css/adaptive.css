@@ -5,6 +5,9 @@
 	.info_ul > li > a {
 		font-size: 17px;
 	}
+	.alert {
+		width: 80% !important;
+	}
 }
 @media only screen and (max-width: 1490px) {
 	header {
@@ -23,7 +26,7 @@
 		text-align: center;
 	}
 	.main_services {
-		column-count: 1;
+		column-count: 2;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -67,7 +70,6 @@
 	.inputs > label {
 		display: block !important;
 	}
-	input[type='email'],
 	input[type='number'],
 	input[type='password'],
 	input[type='text'],
@@ -111,6 +113,19 @@
 	.right_max_side {
 		width: 100% !important;
 	}
+	.nomargin {
+		margin-top: 35px;
+	}
+	.main_content {
+		padding-top: 0px;
+	}
+	.main_services {
+		column-count: 1;
+	}
+	.contacts {
+		margin-bottom: 30px !important;
+		margin-top: 30px !important;
+	}
 }
 @media only screen and (max-width: 1000px) {
 	header {
@@ -144,6 +159,11 @@
 		margin-right: auto;
 	}
 }
+@media screen and (max-width: 450px) {
+	.nomargin > div {
+		width: 60% !important;
+	}
+}
 @media only screen and (max-width: 370px) {
 	.side_bar {
 		width: auto;
@@ -162,5 +182,10 @@
 @media screen and (max-width: 1680px) {
 	.nomargin > div {
 		width: 92%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.alert {
+		width: 70% !important;
 	}
 }

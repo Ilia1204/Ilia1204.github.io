@@ -62,7 +62,10 @@ h1 {
 	margin-right: 30px;
 	padding: 70px 100px;
 	text-align: center;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.6s ease;
+}
+.main_services > li:hover {
+	transform: translateY(-10px);
 }
 .li_orders {
 	background-image: url(../img/orders.png);
@@ -126,7 +129,4 @@ h1 {
 	font-weight: 500;
 	box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
 	text-align: left;
-}
-::selection {
-	color: #e1fbd6;
 }
