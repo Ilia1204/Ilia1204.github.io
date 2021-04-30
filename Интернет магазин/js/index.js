@@ -45,4 +45,17 @@ $(document).ready(function () {
 			fr.readAsDataURL(f) // Читаем blob выбранного файла
 		})
 	})
+	$('a.yakor').on('click', function (e) {
+		var t = $(this)
+		$('html, body')
+			.stop()
+			.animate(
+				{ scrollTop: $(t.attr('href')).offset().top },
+				{
+					duration: 2e3,
+					specialEasing: { width: 'linear', height: 'easeInOutCubic' },
+				}
+			),
+			e.preventDefault()
+	})
 })
