@@ -140,10 +140,13 @@ social_media_footer > ul > li > a > svg > g > g {
 }
 #footer .bottom-footer {
 	margin-top: 50px;
-	font-size: 18px;
-	color: #fff;
-	text-align: center;
-	font-weight: 300;
+    	font-size: 18px;
+    	color: #fff;
+    	text-align: start;
+    	font-weight: 300;
+    	padding: 0;
+    	margin: 0;
+    	margin-left: -15px;
 }
 #footer .bottom-footer a {
 	color: #13e780;
