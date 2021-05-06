@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: Montserrat, sans-serif;
+	overflow-x: hidden;
+	opacity: 1;
+}
+body.kraska {
+	background-color: #35a994;
+}
+#main {
+	height: calc(100vh + 30px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	overflow-x: hidden;
+}
+#main {
+	height: 100%;
+}
+body.kraska #footer,
+body.kraska #main {
+	background-image: none;
+}
+#main.main_blog,
+#main.main_intensive {
+	height: 100%;
+}
+#main > .container {
+	display: flex;
+	height: inherit;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#main > .container header {
+	max-width: inherit;
+	width: 100%;
+	top: 30px;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+#main > .container header .logo {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+#main > .container header .logo img {
+	height: 34px;
+	width: auto;
+	margin-right: 5px;
+	margin-top: -7px;
+}
+img {
+	max-width: 100%;
+}
+#main > .container header .logo p {
+	font-weight: 300;
+	color: #13e780;
+	font-size: 20px;
+}
+#main > .container header .logo p b {
+	font-weight: 400;
+	color: #fff;
+}

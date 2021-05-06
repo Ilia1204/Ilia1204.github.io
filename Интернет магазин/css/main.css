@@ -130,3 +130,51 @@ h1 {
 	box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
 	text-align: left;
 }
+.notification_success {
+	padding: 8px 20px;
+	width: 95%;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 20px;
+	background-color: hsla(0, 0%, 100%, 0.95);
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 15px auto;
+}
+.notification_success {
+	color: #0fc36c;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-not {
+	font-size: 16px;
+	padding: 5px 5px;
+}
+.main-not > a {
+	color: #ba03f2;
+	transition: color 0.4s ease-in-out;
+	border-bottom: 1px dashed #ba03f2;
+	text-decoration: none;
+}
+.main-not > a:hover {
+	border-color: #9302c0;
+	color: #9302c0;
+}
+.btn_close_notif {
+	color: #13e780;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: all 0.6s ease;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.btn_close_notif:hover {
+	color: #03daf2;
+}
